@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--&lt;!&ndash; 启动页logo宽高定义 &ndash;&gt;-->
+    <!--<dimen name="start_logo_width">200dp</dimen>-->
+    <!--<dimen name="start_logo_heigh">85dp</dimen>-->
+    <!--<dimen name="start_logo_margin">60dp</dimen>-->
+    <!--&lt;!&ndash; 下载dialog &ndash;&gt;-->
+    <dimen name="dialog_margin">30dp</dimen>
+    <dimen name="dialog_download_height">300dp</dimen>
+    <dimen name="dialog_download_icon_height">65dp</dimen>
+</resources>

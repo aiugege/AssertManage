@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_90dp">
+
+            <include layout="@layout/titlebar" />
+
+            <RelativeLayout
+                android:id="@+id/market_factoring_detail_rl_lable1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:background="@color/blue">
+
+                <TextView
+                    android:id="@+id/market_factoring_detail_tv_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:maxEms="13"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_tv_bank_yellow1_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_toRightOf="@id/market_factoring_detail_tv_bank"
+                    android:background="@drawable/market_factoring_detail_toubao"
+                    android:paddingBottom="@dimen/margin_1dp"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:paddingRight="@dimen/margin_5dp"
+                    android:paddingTop="@dimen/margin_1dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_bank_yellow_iv"
+                        style="@style/common_text_singleline_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/market_factoring_detail_insured"
+                        android:textSize="@dimen/font_size_24px"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_jine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/market_factoring_detail_tv_bank"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="4000"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_40px" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/market_factoring_detail_tv_amount"
+                        android:layout_toRightOf="@id/market_factoring_detail_tv_amount"
+                        android:text="万"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/market_factoring_detail_ll_jine"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/margin_50dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_type_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/market_background_write"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        android:paddingRight="@dimen/margin_5dp"
+                        android:paddingTop="@dimen/margin_2dp"
+                        android:paddingBottom="@dimen/margin_2dp"
+                        android:textSize="@dimen/font_size_24px"
+                        android:text=""
+                        android:textColor="@color/white_lable" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_type_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:background="@drawable/market_background_write"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_5dp"
+                        android:paddingRight="@dimen/margin_5dp"
+                        android:paddingTop="@dimen/margin_2dp"
+                        android:paddingBottom="@dimen/margin_2dp"
+                        android:textSize="@dimen/font_size_24px"
+                        android:text=""
+                        android:textColor="@color/white_lable" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/market_factoring_detail_ll_lable2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="-45dp"
+                android:background="@drawable/shadow_bg1"
+                android:paddingBottom="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:id="@+id/market_forfaiting_detail_ll0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_lable2_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/margin_20dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/market_item_country" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_24px"
+                            android:text="亚洲" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_24px"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:text="|" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_24px"
+                            android:text="中国" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_lable2_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_20dp">
+
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_date_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:textColor="@color/home_gray_text"
+                            android:textSize="@dimen/font_size_20px"
+                            android:text="@string/market_forfaiting_adapter_validity" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_5dp"
+                            android:textColor="@color/home_gray_text"
+                            android:textSize="@dimen/font_size_20px"
+                            android:text="2018-03-12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_lable2_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:paddingRight="@dimen/margin_10dp"
+                    android:layout_below="@+id/market_forfaiting_detail_ll0"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_currency_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_20px"
+                            android:text="@string/issue_factoring_sell_currency" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_currency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_36px"
+                            android:text="CNY"
+                            android:textColor="@color/yello" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_rate_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_20px"
+                            android:text="@string/market_factoring_detail_transferrate" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_36px"
+                            android:text="0%"
+                            android:textColor="@color/yello" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_duedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_duedate_lable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_text_gray"
+                            android:textSize="@dimen/font_size_20px"
+                            android:text="@string/market_factoring_detail_date" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_duedate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_36px"
+                            android:text="2018.12.30"
+                            android:textColor="@color/yello" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/market_factoring_detail_iv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_lable2_data"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@drawable/market_forfaiting_detail_line" />
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_iv_line"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_seller"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/issue_factoring_sell"
+                        android:textColor="@color/home_gray_text" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv2_seller"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=" "
+                        android:text=""
+                        android:textColor="@color/common_text_gray" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_creditnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_seller"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_creditnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/market_factoring_detail_creditpreson"
+                        android:textColor="@color/home_gray_text" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv2_creditnumber"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=" "
+                        android:text=""
+                        android:textColor="@color/common_text_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_credittype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_creditnumber"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_credittype"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/market_factoring_detail_creditperson1"
+                        android:textColor="@color/home_gray_text" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv2_credittype"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text=""
+                        android:textColor="@color/common_text_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_creditdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_credittype"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_creditdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/market_factoring_detail_creditperson2"
+                        android:textColor="@color/home_gray_text" />
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv2_creditdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text=""
+                        android:textColor="@color/common_text_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_factoringdeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_creditdate"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_15dp">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_factoringdeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/market_factoring_detail_factoringdeal"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1.2">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_factoringdeal"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/market_factoring_detail_iv_factoringdeal"
+                            android:layout_alignParentRight="true"
+                            android:hint="@string/market_forfaiting_detail_download"
+                            android:textColorHint="@color/blue" />
+
+                        <ImageView
+                            android:id="@+id/market_factoring_detail_iv_factoringdeal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/market_factoring_detail_tv2_factoringdeal"
+                            android:src="@drawable/download_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_factoringdealfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_below="@+id/market_factoring_detail_ll_factoringdeal"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_5dp">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/market_factoring_detail_ll_unfold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_iv_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/market_factoring_detail_tv_unfold_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="展开" />
+
+                    <ImageView
+                        android:id="@+id/market_factoring_detail_iv_unfold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:src="@drawable/sort_down" />
+                </LinearLayout>
+                <!-- 收缩控件开始 -->
+                <com.zjhl.pad.view.views.ExpandLayout
+                    android:id="@+id/expandLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/market_factoring_detail_ll_unfold"
+                    android:layout_marginLeft="@dimen/margin_6dp"
+                    android:layout_marginRight="@dimen/margin_6dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_iussingbankswift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_creditdate"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_iussingbankswift"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="开证行SWIFT CODE"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_iussingbankswift"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="BKCHCNBJ"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_iussingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_iussingbankswift"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_iussingbankname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="开证行全名"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_iussingbankname"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="中国银行股份有限公司"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_acceptingbankswift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_iussingbankname"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_acceptingbankswift"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="承兑行SWIFT CODE"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_acceptingbankswift"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="BKCHCNBJ"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_acceptingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_acceptingbankswift"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_acceptingbankname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="承兑行全名"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_acceptingbankname"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="中国银行股份有限公司纽约分行"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_acceptingdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_acceptingbankname"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_acceptingdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="承兑日期"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_acceptingdate"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="2017-3-12"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_paybankswift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_acceptingdate"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_paybankswift"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="偿付行SWIFT CODE"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_paybankswift"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="BKCHCNBJ"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_paybankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_paybankswift"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_paybankname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="偿付行全名"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_paybankname"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="中国银行股份有限公司纽约分行"
+                            android:textColorHint="@color/common_text_gray1" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/market_factoring_detail_iv_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_ll_paybankname"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/market_forfaiting_detail_line"
+                        android:rotation="180"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/market_factoring_detail_ll_blockchain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/market_factoring_detail_iv_line1"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv_blockchain"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="区块链信息"
+                            android:textColorHint="@color/common_text_gray1" />
+
+                        <TextView
+                            android:id="@+id/market_factoring_detail_tv2_blockchain"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="资产发布上链"
+                            android:textColorHint="@color/blue" />
+                    </LinearLayout>
+
+
+                </com.zjhl.pad.view.views.ExpandLayout>
+                <!-- 收缩控件结束 -->
+
+            </RelativeLayout>
+            <!-- 交易信息开始 -->
+            <LinearLayout
+                android:id="@+id/myquote_forfaiting_detail_ll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_product_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:text="@string/myquote_jiaoyi_title" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/myquote_forfaiting_detail_ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/myquote_price_bg">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.7"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:src="@drawable/assets_detail_price_icon"/>
+                <TextView
+                    android:id="@+id/myquote_forfaiting_detail_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:text=""
+                    />
+                <TextView
+                    android:id="@+id/myquote_forfaiting_detail_tv_precent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:text="3.20000%"
+                    />
+            </LinearLayout>
+            <!-- 交易信息结束 -->
+
+            <!-- 报价信息开始 -->
+            <LinearLayout
+                android:id="@+id/myquote_forfaiting_detail_ll_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_product_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:text="@string/market_forfaiting_detail_quote" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/myquote_forfaiting_detail_ll_price2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/shadow_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/myquote_forfaiting_detail_tv_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:text="@string/market_factoring_detail_transferrate"
+                        android:textSize="@dimen/font_size_24px"
+                        android:textColor="@color/common_text_gray"
+                        />
+                    <TextView
+                        android:id="@+id/myquote_forfaiting_detail_tv_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:text="@string/dialog_reviewoffer_title3"
+                        android:textSize="@dimen/font_size_24px"
+                        android:textColor="@color/common_text_gray"
+                        />
+                    <TextView
+                        android:id="@+id/myquote_forfaiting_detail_tv_title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:text="@string/myquote_forfaiting_detail_title3"
+                        android:textSize="@dimen/font_size_24px"
+                        android:textColor="@color/common_text_gray"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myquote_forfaiting_detail_ll_pricelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:paddingBottom="@dimen/margin_10dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 报价信息结束 -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

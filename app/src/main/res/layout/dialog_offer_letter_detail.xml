@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/activity_bg_iucency"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_offer_letterdetail_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/dialog_offer_letterdetail_iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_below="@+id/dialog_offer_letterdetail_iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+
+    <LinearLayout
+        android:id="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_below="@+id/dialog_offer_letterdetail_iv_ss"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:layout_marginLeft="@dimen/margin_60dp"
+        android:layout_marginRight="@dimen/margin_60dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/dialog_background_write"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/dialog_offer_letterdetail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:text="@string/review_offerletter_hint"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/blockchain_number"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10101200"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_et_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dialog_offer_letter_title"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_for"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dialog_offer_letter_from"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_for"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="中国银行"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dialog_offer_letter_to"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="中国银行"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="2018.06.01"
+                    android:textColor="@color/common_text_gray"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="@string/dialog_offer_letter_detail"
+                    android:textColor="@color/common_text_gray"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_lcnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lcnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dialog_offer_letter_assertnumber"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_28px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_lcnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10200102"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_28px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dialog_offer_letter_jiaoyimingxi"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_28px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_iussingbankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_iussingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_openfullname"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_iussingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:hint="中国银行股份有限公司"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_acceptingbankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_offer_letterdetail_ll_acceptingbankswift"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_acceptingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_acceptbank"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_acceptingbankname"
+                        android:gravity="right|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="中国银行股份有限公司纽约分行"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_credittype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_offer_letterdetail_ll_creditnumber"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_credittype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_cridetype"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_credittype"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="NEGOTIATION"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_creditnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_creditnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_creditnumber"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_creditnumber"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="20 0011LC123458"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_lcproposer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lcproposer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_shenqingren"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_lcproposer"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/font_size_28px"
+                        android:hint=""
+                        android:maxLength="40" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_lc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="@string/dialog_offer_letter_shouyiren"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_lc"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:textSize="@dimen/font_size_28px"
+                        android:hint=""
+                        android:maxLength="40"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_basicTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_basicTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_pinming"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_basicTransaction"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_interestRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_interestRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_jiexifangshi"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_interestRate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_shouxufei"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_fee"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="13"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_invoiceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_invoiceAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_fapiaojine"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_invoiceAmount"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="13"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_grace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_grace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_kuanxianqi"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_grace"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="@string/dialog_offer_letter_tiexianqi"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodDay"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_mairuhang"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodStart"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_acceptdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_acceptdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_chengduihang"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_acceptdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountAcceptDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountAcceptDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_openbankdate"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountAcceptDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="@string/dialog_offer_letter_tiexianqiworkdate"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodWork"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="6"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_bankCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_bankCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_bankfeiyong"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_bankCost"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="13"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_preCharging"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_preCharging"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_yukoufei"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_preCharging"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_deliveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_deliveryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_danjujiaofuri"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_deliveryDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="11"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payBillDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payBillDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_fukuangongzuori"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payBillDay"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_payaccount"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccount"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccountBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccountBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_openbankfullname"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccountBank"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccountApproach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccountApproach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="@string/dialog_offer_letter_payway"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccountApproach"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_pollicitaBackDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_pollicitaBackDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_letterreviewdate"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_pollicitaBackDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:layout_marginBottom="@dimen/margin_2dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_pollicitaBackEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_pollicitaBackEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dialog_offer_letter_letterenddate"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_pollicitaBackEndDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_specialAgreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_specialAgreement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_deal"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_specialAgreement"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@color/common_text_gray1" />
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_signPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_signPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="@string/dialog_offer_letter_sign"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <EditText
+                        android:id="@+id/dialog_offer_letterdetail_tv2_signPerson"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="20"
+                        android:textSize="@dimen/font_size_28px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_0.5dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:background="@color/common_text_gray1" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_offer_letterdetail_tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bt_sure_commit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,254 @@
+package com.zjhl.pad.moudle.entity.res;
+
+import com.zjhl.pad.moudle.entity.base.ResponseBean;
+
+/**
+ * @desc: ForfaitingPreferenceDetail 我的偏好查询详情
+ * @version: v1.0
+ * @packagename: com.zjhl.pad.moudle.entity.res
+ * @author: pluto
+ * @create: 2018/6/12 10:31
+ * @projectname: nnkj
+ **/
+public class ForfaitingPreferenceDetail extends ResponseBean {
+
+    /**
+     * code : 300
+     * message : SUCCESS
+     * totalCount : 0
+     * totalPage : 0
+     * pageSize : 0
+     * page : 0
+     * data : {"id":1,"areaId":"1","areaName":"1","areaNameEn":"1","countryId":"1","countryName":"美国","countryNameEn":"USA","amount":7000,"currency":"CNY","deadLine":"2018-05-20 ","discountRate":0.3,"creditType":"123123","indateMessage":"2018-05-20 ","debtType":2}
+     * json : null
+     * list : null
+     */
+
+    private int code;
+    private String message;
+    private int totalCount;
+    private int totalPage;
+    private int pageSize;
+    private int page;
+    private DataBean data;
+    private Object json;
+    private Object list;
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public int getTotalCount() {
+        return totalCount;
+    }
+
+    public void setTotalCount(int totalCount) {
+        this.totalCount = totalCount;
+    }
+
+    public int getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(int totalPage) {
+        this.totalPage = totalPage;
+    }
+
+    public int getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
+    }
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public DataBean getData() {
+        return data;
+    }
+
+    public void setData(DataBean data) {
+        this.data = data;
+    }
+
+    public Object getJson() {
+        return json;
+    }
+
+    public void setJson(Object json) {
+        this.json = json;
+    }
+
+    public Object getList() {
+        return list;
+    }
+
+    public void setList(Object list) {
+        this.list = list;
+    }
+
+    public static class DataBean {
+        /**
+         * id : 1
+         * areaId : 1
+         * areaName : 1
+         * areaNameEn : 1
+         * countryId : 1
+         * countryName : 美国
+         * countryNameEn : USA
+         * amount : 7000
+         * currency : CNY
+         * deadLine : 2018-05-20
+         * discountRate : 0.3
+         * creditType : 123123
+         * indateMessage : 2018-05-20
+         * debtType : 2
+         */
+
+        private int id;
+        private String areaId;
+        private String areaName;
+        private String areaNameEn;
+        private String countryId;
+        private String countryName;
+        private String countryNameEn;
+        private String amount;
+        private String currency;
+        private String deadLine;
+        private String discountRate;
+        private String creditType;
+        private String indateMessage;
+        private String debtType;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getAreaId() {
+            return areaId;
+        }
+
+        public void setAreaId(String areaId) {
+            this.areaId = areaId;
+        }
+
+        public String getAreaName() {
+            return areaName;
+        }
+
+        public void setAreaName(String areaName) {
+            this.areaName = areaName;
+        }
+
+        public String getAreaNameEn() {
+            return areaNameEn;
+        }
+
+        public void setAreaNameEn(String areaNameEn) {
+            this.areaNameEn = areaNameEn;
+        }
+
+        public String getCountryId() {
+            return countryId;
+        }
+
+        public void setCountryId(String countryId) {
+            this.countryId = countryId;
+        }
+
+        public String getCountryName() {
+            return countryName;
+        }
+
+        public void setCountryName(String countryName) {
+            this.countryName = countryName;
+        }
+
+        public String getCountryNameEn() {
+            return countryNameEn;
+        }
+
+        public void setCountryNameEn(String countryNameEn) {
+            this.countryNameEn = countryNameEn;
+        }
+
+        public String getAmount() {
+            return amount;
+        }
+
+        public void setAmount(String amount) {
+            this.amount = amount;
+        }
+
+        public String getCurrency() {
+            return currency;
+        }
+
+        public void setCurrency(String currency) {
+            this.currency = currency;
+        }
+
+        public String getDeadLine() {
+            return deadLine;
+        }
+
+        public void setDeadLine(String deadLine) {
+            this.deadLine = deadLine;
+        }
+
+        public String getDiscountRate() {
+            return discountRate;
+        }
+
+        public void setDiscountRate(String discountRate) {
+            this.discountRate = discountRate;
+        }
+
+        public String getCreditType() {
+            return creditType;
+        }
+
+        public void setCreditType(String creditType) {
+            this.creditType = creditType;
+        }
+
+        public String getIndateMessage() {
+            return indateMessage;
+        }
+
+        public void setIndateMessage(String indateMessage) {
+            this.indateMessage = indateMessage;
+        }
+
+        public String getDebtType() {
+            return debtType;
+        }
+
+        public void setDebtType(String debtType) {
+            this.debtType = debtType;
+        }
+    }
+}

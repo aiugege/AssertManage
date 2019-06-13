@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/shadow_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/bt_enterprise_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/iv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginRight="-60dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/mine_teller_name"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_40px" />
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBaseline="@+id/et_getet"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_100dp"
+                        android:layout_marginRight="@dimen/margin_20dp"
+                        android:background="@null"
+                        android:text=""
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_30px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bt_mine_assets"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bt_phone_modifier"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/iv_asset"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tv_phone"
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_size_40px" />
+
+                        <EditText
+                            android:id="@+id/et_put_phone_number"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:maxLength="11"
+                            android:textSize="@dimen/font_size_30px" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bt_phone_modifier"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/mine_teller_summit"
+                        android:gravity="center"
+                        android:text="@string/mine_tellermanager_modification"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/font_size_28px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bt_bug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bt_emial_modifier"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_emial"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mine_tller_email"
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_size_40px" />
+
+                        <EditText
+                            android:id="@+id/et_put_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:maxLength="30"
+                            android:textSize="@dimen/font_size_30px" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bt_emial_modifier"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/mine_teller_summit"
+                        android:gravity="center"
+                        android:text="@string/mine_tellermanager_modification"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/font_size_28px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bt_my_hoby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="28dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/bt_password_modifier"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/iv_tmanager_myhoby"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/mine_teller_password"
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_size_40px" />
+
+                        <EditText
+                            android:id="@+id/et_myhoby"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:inputType="textPassword|textMultiLine"
+                            android:textColor="@color/dark"
+                            android:maxLength="16"
+                            android:textSize="@dimen/font_size_30px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bt_password_modifier"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginRight="17dp"
+                        android:background="@drawable/mine_teller_summit"
+                        android:gravity="center"
+                        android:text="@string/mine_tellermanager_modification"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/font_size_28px" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/my_jifen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="@dimen/margin_30dp">
+
+                    <TextView
+                        android:id="@+id/iv_tmanager_jifen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tv_role"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_40px" />
+
+                    <Spinner
+                        android:id="@+id/bt_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:entries="@array/songs"
+                        android:spinnerMode="dropdown"
+                        android:background="@null"
+                        android:layout_toLeftOf="@+id/iv_tell"
+                        android:theme="@style/SpinnerStyle" />
+
+                    <ImageView
+                        android:id="@+id/iv_tell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/mine_jiantou" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_qukuailian_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/iv_qukuailian_book"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1.2"
+                        android:text="@string/mine_teller_manager_certification"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_40px" />
+
+
+                    <TextView
+                        android:id="@+id/tv_qukuailian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_weight="2"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:text="asklasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadad"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_30px"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bt_sure_commit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/ll_all"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_button_background"
+                android:gravity="center"
+                android:text="@string/bt_sure_commit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_40px" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

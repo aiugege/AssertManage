@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_reject_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_reject_ll_conent"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/dialog_reject_iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_reject_ll_conent"
+        android:layout_below="@+id/dialog_reject_iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_reject_ll_conent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/dialog_reject_iv_ss"
+        android:layout_marginLeft="@dimen/margin_60dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="@dimen/margin_60dp"
+        android:background="@drawable/dialog_background_write"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/dialog_enterprise_reject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center"
+            android:text="@string/enterprise_reject_bt"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_32px" />
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_reject_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15dp"
+            android:layout_weight="4"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/dialog_enterprise_reject_tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="left"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_24px" />
+
+            <TextView
+                android:id="@+id/dialog_enterprise_reject_tv_reason1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dialog_enterprise_reject_tv_reason"
+                android:background="@null"
+                android:gravity="left"
+                android:textColor="@color/common_text_gray"
+                android:textSize="@dimen/font_size_24px" />
+
+            <TextView
+                android:id="@+id/dialog_enterprise_reject_tv_reason2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_enterprise_reject_tv_reason"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@null"
+                android:gravity="left"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textColor="@color/common_text_gray"
+                android:textSize="@dimen/font_size_24px" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

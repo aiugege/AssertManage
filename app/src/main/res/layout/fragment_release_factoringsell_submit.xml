@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_compact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_compact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保理合同"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_compact_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_compact"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_insurancecompact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_insurancecompact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保险合同"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_insurancecompact_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_insurancecompact"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_transportdocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_transportdocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运输单据"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_transportdocument_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_transportdocument"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应收账款转让通知书"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_notice_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_notice"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_financialstatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_financialstatement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="财务报表"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_financialstatement_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_financialstatement"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_tradingcontract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_tradingcontract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贸易合同"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:textColor="@color/dark"
+                    />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_tradingcontract_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:text="上传"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_tradingcontract"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/release_factoringsell_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:layout_below="@+id/buttion_getMsg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:background="@drawable/login_button_background"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_40px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

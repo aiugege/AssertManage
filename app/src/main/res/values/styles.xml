@@ -1,0 +1,194 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Splash -->
+    <style name="Splash" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!-- Dialog对话框 -->
+    <style name="MyLoadDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_mobilenumber">
+        <item name="android:hint">@string/mobilenumber_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--请求网络等待-->
+    <style name="DialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="bottom_tag_style">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+
+        <item name="android:textColor">@drawable/home_textcolor_drawable_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="bottom_tag_style3">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.2</item>
+
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+
+        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="bottom_tag_style2">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.9</item>
+
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+
+        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="bottom_tag_style1">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.2</item>
+
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+
+        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">#ddffffff</item> <!--改变了spinner的颜色  -->
+        <item name="android:textColor">@color/common_text_gray</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/font_size_36px</item>
+    </style>
+
+    <style name="common_text_singleline_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxEms">27</item>
+    </style>
+    <style name="common_text_singleline_style1">
+        <item name="android:maxEms">40</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:hint">@string/hint_market_forfaiting_input</item>
+        <item name="android:textColor">@color/common_text_gray</item>
+        <item name="android:textColorHint">@color/common_text_gray1</item>
+    </style>
+    <declare-styleable name="RotateTextView"> <attr name="degree" format="dimension" /> </declare-styleable>
+    <!--自定义dialog 样式-->
+    <style name="BaseDialog" parent="android:style/Theme.Dialog">
+    <item name="android:background">#00000000</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowCloseOnTouchOutside">false</item><!--点击屏幕是否消失-->
+    </style>
+    <!--自定义dialog 样式-->
+    <style name="myTransparent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@color/activity_bg_alpha2</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--自定义dialog 样式 透明-->
+    <style name="myTransparent2" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@color/activity_bg_alpha3</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

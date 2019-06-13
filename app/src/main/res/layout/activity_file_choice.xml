@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/activity_file_choice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_upload_type"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_40px"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_file_choice_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center"
+            android:text="@string/mine_upload"
+            android:textColor="@color/common_text_gray1"
+            android:textSize="@dimen/font_size_36px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@color/common_text_gray1" />
+        <TextView
+            android:id="@+id/activity_file_choice_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center"
+            android:textColor="@color/common_text_gray1"
+            android:text="@string/mine_tack_paction"
+            android:textSize="@dimen/font_size_36px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

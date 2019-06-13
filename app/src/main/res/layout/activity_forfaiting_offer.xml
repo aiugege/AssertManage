@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/market_forfaiting_offer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/shadow_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/market_forfaiting_offer_ll_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="101120101"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px" />
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv2_bank"
+                style="@style/common_text_singleline_style1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="广发银行"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_forfaiting_offer_ll_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="@string/issue_factoring_sell_money"
+                android:textColor="@color/home_gray_text"
+                android:textSize="@dimen/font_size_30px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/market_forfaiting_offer_tv2_amount"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="140"
+                    android:textColor="@color/yello"
+                    android:textSize="@dimen/font_size_30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="万"
+                    android:textColor="@color/yello"
+                    android:textSize="@dimen/font_size_30px"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_forfaiting_offer_ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:text="@string/filtrate_enddate"
+                android:textColor="@color/home_gray_text"
+                android:textSize="@dimen/font_size_30px" />
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv2_date"
+                style="@style/common_text_singleline_style1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2019-03-01"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/market_forfaiting_offer_ll_messagedate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv_messagedate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/issue_factoring_sell_indate"
+                android:textColor="@color/common_text_gray"
+                android:textSize="@dimen/font_size_24px" />
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv2_messagedate"
+                style="@style/common_text_singleline_style1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:text="2019-03-01"
+                android:textColor="@color/common_text_gray"
+                android:textSize="@dimen/font_size_24px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/market_forfaiting_offer_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/shadow_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/market_forfaiting_offer_ll_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv_rate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left|center_vertical"
+                android:text="@string/forfaiting_offer_transferrate"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px" />
+
+            <EditText
+                android:id="@+id/market_forfaiting_offer_ev_rate"
+                style="@style/common_text_singleline_style1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/hint_forfaiting_offer_transferrate"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:paddingBottom="@dimen/margin_10dp"
+                android:paddingTop="@dimen/margin_10dp"
+                android:textColor="@color/dark"
+                android:textColorHint="@color/hui"
+                android:textSize="@dimen/font_size_30px" />
+
+            <TextView
+                android:id="@+id/market_forfaiting_offer_tv2_rate"
+                style="@style/common_text_singleline_style1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:text="%"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/market_forfaiting_offer_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/button_bj_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:text="@string/forfaiting_offer_commitprice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_30px" />
+    </RelativeLayout>
+</LinearLayout>

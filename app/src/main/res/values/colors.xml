@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_lable">#f8fafa</color>
+    <color name="blue">#3967c3</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="yello">#FECE4E</color>
+    <color name="yello_two">#fdce4e</color>
+    <color name="dark">#494949</color>
+    <color name="hui">#dddddd</color>
+    <color name="qian_write">#999999</color>
+    <item type="color" name="transparent">@*android:color/transparent</item>
+
+    <!-- dialog 颜色-->
+    <color name="res_color_progress">@color/register_button_bg</color>
+
+    <color name="common_transparent">#00000000</color>
+    <color name="common_black">#000000</color>
+
+    <color name="black_transparent">#99000000</color>
+    <color name="record_black_transparent">#4f000000</color>
+    <color name="white_transparent">#25FFFFFF</color>
+    <color name="record_white_transparent">#3fFFFFFF</color>
+    <color name="common_white">#FFFFFE</color>
+    <color name="seekbar_background">#706D6C</color>
+    <color name="seekbar_progress">#607A3F</color>
+    <!--<color name="login_edittextbg">#f6f6f6</color>-->
+    <color name="login_edittextbg">#f3f6fb</color>
+    <color name="login_buttonbg">#668f31</color>
+    <color name="register_button_bg">#4aa631</color>
+    <color name="poem_lrc">#959595</color>
+    <color name="recommend_title">#dcdcdc</color>
+    <color name="trailer_nextperiods">#7d7d7d</color>
+    <color name="common_text_ursor">#7fa152</color>
+    <color name="common_text_gray_balck">#666666</color>
+    <!--activity背景颜色-->
+    <color name="common_background">#f3f6fb</color>
+    <!-- selected color -->
+    <color name="color_gray_bg">#fff1f1f1</color>
+    <!-- title -->
+    <color name="color_black_selected_title">#1b1b1b</color>
+    <color name="color_gray_selected_desc">#959595</color>
+    <color name="common_text_black">#1b1b1b</color>
+    <color name="common_text_gray">#999999</color>
+    <color name="common_text_gray1">#cccccc</color>
+    <color name="common_text_gray2">#c2c2c2</color>
+    <!--<color name="common_backround">#f6f6f6</color>-->
+    <color name="common_divider_horizontal_line_gray">#959595</color>
+    <color name="common_divider_vertical_line_gray">#eef2e8</color>
+    <color name="common_bg_gray">#eeeeee</color>
+    <color name="common_vertical_line_gray">#e3e3e3</color>
+    <color name="common_view_bg_gray">#c9c9c9</color>
+    <!-- search -->
+    <color name="search_background_gray">#ECECEC</color>
+    <!-- titlepage -->
+    <color name="titlepage_background_gray">#48460D</color>
+    <color name="titletext_background_gray">#231815</color>
+    <color name="titleshizhai_background_gray">#687073</color>
+    <color name="common_text_green">#7B902E</color>
+    <color name="record_btn_listen">#c4c82d</color>
+    <color name="text_orange_color">#FFCE53</color>
+    <color name="activity_bg_iucency">#e6ffffff</color>
+    <color name="activity_bg_alpha">#33ffffff</color>
+    <color name="activity_bg_alpha1">#00ffffff</color>
+    <color name="activity_bg_alpha2">#80000000</color>
+    <color name="activity_bg_alpha3">#50000000</color>
+    <color name="home_libor_text">#7C87C4</color>
+    <color name="home_shibor_text">#E59DA7</color>
+    <color name="home_hibor_text">#87C4C3</color>
+    <color name="home_gray_text">#b7b7b7</color>
+    <color name="home_gray_bg">#d2d2d2</color>
+    <color name="home_dark_text">#3e3e3e</color>
+    <color name="home_gray_dark_text">#cdcdcd</color>
+    <color name="login_red_text">#d43627</color>
+</resources>

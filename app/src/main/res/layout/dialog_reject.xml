@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_reject_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_reject_ll_conent"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/dialog_reject_iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_reject_ll_conent"
+        android:layout_below="@+id/dialog_reject_iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_reject_ll_conent"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/dialog_reject_iv_ss"
+        android:layout_marginLeft="@dimen/margin_30dp"
+        android:layout_marginRight="@dimen/margin_30dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/dialog_background_write"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:gravity="center"
+            android:text="@string/dialog_reviewoffer_title4"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/font_size_36px" />
+        <TextView
+            android:id="@+id/dialog_reject_tv_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/home_gray_bg"
+            android:textSize="@dimen/font_size_32px" />
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_reject_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_weight="4"
+            android:background="@color/gray">
+
+            <EditText
+                android:id="@+id/dialog_reject_tv_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_10dp"
+                android:gravity="start"
+                android:maxLength="500"
+                android:background="@null"
+                android:textColorHint="@color/home_gray_text"
+                android:hint="@string/hint_dialog_reject_content" />
+
+            <TextView
+                android:id="@+id/dialog_reject_tv_limit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/dialog_reject_tv_limit2"
+                android:textColor="@color/common_text_gray"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:text="0" />
+            <TextView
+                android:id="@+id/dialog_reject_tv_limit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/common_text_gray"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:text="/500" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_reject_tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sellassert_forfaiting_adapter_commit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

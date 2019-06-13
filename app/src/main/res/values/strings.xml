@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation"  >
+    <string name="lable_facotring">保理</string>
+    <string name="lable_forfaiting">福费廷</string>
+    <!-- maintab开始 -->
+    <string name="maintab_home">首页</string>
+    <string name="maintab_market">市场</string>
+    <string name="maintab_message">消息</string>
+    <string name="maintab_mine">我的</string>
+    <!-- maintab结束 -->
+    <string name="app_name">资产易</string>
+    <string name="nopermission">未取得权限</string>
+    <string name="nopermission_tips">没有获取到运行所必要的权限，请您同意后再使用</string>
+    <string name="exception_nopermission">请您从手机管理应用内开启相关权限</string>
+    <!-- home页开始 -->
+    <string name="home_title_text">资产易</string>
+    <string name="home_dailyindex">每日指数</string>
+    <string name="home_register_count">注册总量</string>
+    <string name="home_deal_amount">成交金额（美元）</string>
+    <string name="home_deal_count">成交笔数</string>
+    <string name="home_libor">LIBOR 指数</string>
+    <string name="home_shibro">SHIBOR 指数</string>
+    <string name="home_hibor">HIBOR 指数</string>
+    <string name="home_advantage">品牌优势</string>
+    <string name="home_safe">安全保障</string>
+    <string name="home_safe_detail">区块链技术保障交易安全</string>
+    <string name="home_deal">交易快捷</string>
+    <string name="home_deal_detail">最快2小时达成资产交易</string>
+    <string name="home_message">信息开放</string>
+    <string name="home_message_detail">公开透明的资产交易过程</string>
+    <string name="home_manager">管理专业</string>
+    <string name="home_manager_detail">针对场景提供专业服务</string>
+    <string name="home_team">集团成员</string>
+    <string name="home_team_all">旗下成员</string>
+    <string name="home_bottom_text">中金汇理商业保理有限公司 | 北京中金汇理金融服务外包有限公司\n中金汇理融资租赁有限公司 | 中金汇理（ 天津 ） 融资租赁有限公司\n中金汇理资产管理有限公司 | 上海璞丰融资租赁有限公司\n宁波众泰融资租赁有限公司\n</string>
+    <string name="home_text_product">产品领域</string>
+    <string name="home_text_service">专业服务</string>
+    <string name="home_text_detail_forfaiting">支持国际、国内信用证数字化交易</string>
+    <string name="home_text_detail_factoring">支持多种保理服务及组合产品</string>
+    <string name="home_text_send">资产登记与发布</string>
+    <string name="home_text_detail_send">多币种的全球服务</string>
+    <string name="home_text_search">资产查询与撮合</string>
+    <string name="home_text_detail_search">多渠道资产查询方式</string>
+    <string name="home_text_deal">资产交易与转让</string>
+    <string name="home_text_detail_deal">资产全生命周期的管理</string>
+    <!-- home页结束 -->
+    <!-- 市场页开始 -->
+    <string name="market_forfaiting_amount">承兑金额</string>
+    <string name="market_title">市场</string>
+    <string name="market_forfaiting_adapter_type_inland">国内</string>
+    <string name="market_forfaiting_adapter_type_outland">国际</string>
+    <string name="market_forfaiting_adapter_date">资产到期日 :</string>
+    <string name="market_forfaiting_adapter_currency">承兑币种</string>
+    <string name="market_forfaiting_adapter_validity">信息有效期 :</string>
+    <string name="market_facotring_type1">单保理、明保理</string>
+    <string name="market_facotring_type2">单保理、暗保理</string>
+    <string name="market_facotring_type3">双保理、明保理</string>
+    <string name="market_facotring_type4">双保理、暗保理</string>
+    <string name="market_facotring_inland">国内</string>
+    <string name="market_facotring_exprie">保理到期日：</string>
+    <string name="market_facotring_name">保理商名称：</string>
+    <string name="market_facotring_sell">资产卖出方：</string>
+    <!--筛选开始 -->
+    <string name="market_forfaiting_type1">国内信用证</string>
+    <string name="market_forfaiting_type2">国际信用证</string>
+    <string name="market_forfaiting_filtrate_single">单保理</string>
+    <string name="market_forfaiting_filtrate_double">双保理</string>
+    <string name="market_forfaiting_filtrate_disclosed">明保理</string>
+    <string name="market_forfaiting_filtrate_undisclosed">暗保理</string>
+    <string name="market_forfaiting_filtrate_amount_count">承兑金额范围</string>
+    <string name="market_forfaiting_filtrate_areaandcountry">地区/国家</string>
+    <string name="market_forfaiting_filtrate_openbank_areaandcountry">开证行地区/开证行国家</string>
+    <string name="market_forfaiting_filtrate_openfullname">开证行全名</string>
+    <string name="market_forfaiting_filtrate_reset">重置</string>
+    <string name="market_forfaiting_filtrate_sure">确定</string>
+    <string name="market_forfaiting_filtrate_discountrate">贴现率范围（%）</string>
+    <string name="market_forfaiting_filtrate_amount_round">金额范围</string>
+    <string name="market_forfaiting_filtrate_transferrate">转让利率范围（%）</string>
+    <string name="market_forfaiting_filtrate_type">信用证类型:</string>
+    <!--筛选结束 -->
+    <!--福费廷详情开始 -->
+    <string name="market_forfaiting_detail_takeup">收起</string>
+    <string name="market_forfaiting_detail_takedown">展开</string>
+    <string name="market_forfaiting_detail_stepone">资产发布上链</string>
+    <string name="market_forfaiting_detail_steptwo">资产撮合成功</string>
+    <string name="market_forfaiting_detail_stepthree">资产交易完成</string>
+    <string name="market_forfaiting_detail_none">未上链</string>
+    <string name="market_forfaiting_detail_make_sure">确认撮合</string>
+    <string name="market_forfaiting_detail_submit_price">报价买入</string>
+    <string name="market_forfaiting_detail_discount_rate">贴现率</string>
+    <string name="market_forfaiting_detail_number">信用证编号</string>
+    <string name="market_forfaiting_detail_credittype">信用证兑付方式</string>
+    <string name="market_forfaiting_detail_creditdate">信用证签发日期</string>
+    <string name="market_forfaiting_detail_openswiftcode">开证行SWIFT CODE</string>
+    <string name="market_forfaiting_detail_openfullname">开证行全名</string>
+    <string name="market_forfaiting_detail_acceptswiftcode">承兑行SWIFT CODE</string>
+    <string name="market_forfaiting_detail_acceptfullname">承兑行全名</string>
+    <string name="market_forfaiting_detail_acceptdate">承兑日期</string>
+    <string name="market_forfaiting_detail_payswift">偿付行SWIFT CODE</string>
+    <string name="market_forfaiting_detail_payfullname">偿付行全名</string>
+    <string name="market_forfaiting_detail_blockchain">区块链信息</string>
+    <string name="market_forfaiting_detail_deal">福费廷协议</string>
+    <string name="market_forfaiting_detail_download">下载</string>
+    <string name="market_forfaiting_detail_sellmessage">卖方信息</string>
+    <string name="market_forfaiting_detail_complete1">共完成</string>
+    <string name="market_forfaiting_detail_complete2">笔</string>
+    <string name="market_forfaiting_detail_countall">成交金额</string>
+    <string name="market_forfaiting_detail_dealrate">成交率</string>
+    <string name="market_forfaiting_detail_swift_code">SWIFT CODE</string>
+    <string name="market_forfaiting_detail_arealable">注册地</string>
+    <string name="market_forfaiting_detail_quote">报价信息</string>
+    <string name="market_factoring_detail_seller_amountwan">美元</string>
+    <!--福费廷详情结束 -->
+    <!--保理详情开始 -->
+    <string name="market_factoring_detail_insured">已投保</string>
+    <string name="market_factoring_detail_transferrate">转让利率</string>
+    <string name="market_factoring_detail_date">资产到期日</string>
+    <string name="market_factoring_detail_creditpreson">信用保险承保人</string>
+    <string name="market_factoring_detail_creditperson1">原始债权人</string>
+    <string name="market_factoring_detail_creditperson2">原始债务人</string>
+    <string name="market_factoring_detail_factoringdeal">财务报表</string>
+    <string name="myquote_forfaiting_detail_title3">复核结果</string>
+    <string name="item_myquote_detail_price_list_daifuhe">待复核</string>
+    <string name="item_myquote_detail_price_list_tongguo">通过</string>
+    <string name="item_myquote_detail_price_list_weitongguo">未通过</string>
+    <!--保理详情结束 -->
+    <!--报价列表开始 -->
+    <string name="adapter_market_forfaiting_date">报价时间：</string>
+    <!--报价列表结束 -->
+    <!-- 市场页结束 -->
+    <!-- 发布页开始 -->
+    <string name="issue_forfaiting_sell">出售录入</string>
+    <string name="issue_forfaiting_quote">偏好录入</string>
+    <string name="issue_forfaiting_picker_date">日期</string>
+    <string name="forfaiting_sell_save">保存</string>
+    <!-- 发布福费廷开始 -->
+    <string name="issue_forfaiting_sell_title">标题</string>
+    <string name="issue_forfaiting_sell_letteracceptphoto">信用证承兑电（选填）</string>
+    <string name="issue_forfaiting_sell_upload">上传</string>
+    <string name="issue_forfaiting_sell_letter">信用证（选填）</string>
+    <string name="issue_forfaiting_sell_ocr">此文件上传仅用于OCR识别</string>
+    <string name="issue_forfaiting_sell_credittype">信用证类型</string>
+    <string name="issue_forfaiting_sell_payswiftcode">偿付行SWIFT CODE（如有）</string>
+    <string name="issue_forfaiting_sell_payfullname">偿付行全名（如有）</string>
+    <string name="issue_forfaiting_sell_choicecurrency">请选择</string>
+    <string name="issue_forfaiting_sell_discountrate">贴现率</string>
+    <string name="issue_forfaiting_sell_indate">信息有效期</string>
+    <string name="issue_forfaiting_sell_letterfile">福费廷协议（选填）</string>
+    <string name="issue_forfaiting_sell_area">地区</string>
+    <string name="issue_forfaiting_sell_openbank_area">开证行地区</string>
+    <string name="issue_forfaiting_sell_countrys">国家</string>
+    <string name="issue_forfaiting_sell_openbank_countrys">开证行国家</string>
+    <string name="issue_forfaiting_sell_submit">提交</string>
+    <string name="issue_forfaiting_sell_next">下一步</string>
+    <string name="issue_forfaiting_sell_enddate">资产到期日</string>
+    <string name="market_forfaiting_detail_deal_type">信用证兑付方式</string>
+    <string name="issue_forfaiting_sell_letter0">信用证</string>
+    <string name="issue_forfaiting_sell_letteracceptphoto0">信用证承兑电</string>
+    <string name="issue_forfaiting_sell_yesorno">确认提交？</string>
+    <!-- 发布福费廷结束 -->
+    <!-- 发布保理开始 -->
+    <string name="issue_factoring_sell_no">否</string>
+    <string name="issue_factoring_sell">资产卖出方</string>
+    <string name="issue_factoring_sell_type">保理类型</string>
+    <string name="issue_factoring_sell_money">金额</string>
+    <string name="issue_factoring_sell_currency">币种</string>
+    <string name="issue_factoring_sell_transferrate">转让利率</string>
+    <string name="issue_factoring_sell_exprie">保理到期日</string>
+    <string name="issue_factoring_sell_name">保理商名称</string>
+    <string name="issue_factoring_sell_creditpreson1">原始债权人（选填）</string>
+    <string name="issue_factoring_sell_creditpreson2">原始债务人（选填）</string>
+    <string name="issue_factoring_sell_iscover">是否投保出口信用保险</string>
+    <string name="issue_factoring_sell_assurer">信用保险承保人</string>
+    <string name="issue_factoring_sell_indate">信息有效期</string>
+    <string name="issue_factoring_sell_insurancecompact">保理合同</string>
+    <string name="issue_factoring_sell_compact">货物保险单（如有）</string>
+    <string name="issue_factoring_sell_transport">运输单据（选填）</string>
+    <string name="issue_factoring_sell_notice">应收账款转让通知书</string>
+    <string name="issue_factoring_sell_tradingcontract">贸易合同（选填）</string>
+    <string name="issue_factoring_sell_compact1">货物保险单</string>
+    <string name="issue_factoring_sell_transport1">运输单据</string>
+    <string name="issue_factoring_sell_tradingcontract1">贸易合同</string>
+    <string name="issue_factoring_sell_yes">是</string>
+    <!-- 发布保理结束 -->
+    <!-- 发布偏好福费廷开始 -->
+    <string name="issue_forfaiting_buy_discountrate">预期贴现率（收益率）</string>
+    <string name="issue_forfaiting_buy_validityinformation">期望福费廷资产期限</string>
+    <string name="issue_forfaiting_buy_qian">前</string>
+    <string name="issue_forfaiting_buy_accepttype">信用证兑付方式（选填）</string>
+    <string name="issue_forfaiting_buy_area">地区（选填）</string>
+    <string name="issue_forfaiting_buy_openbank_area">开证行地区（选填）</string>
+    <string name="issue_forfaiting_buy_country">国家（选填）</string>
+    <string name="issue_forfaiting_buy_openbank_country">开证行国家（选填）</string>
+    <!-- 发布偏好福费廷结束 -->
+    <!-- 发布偏好保理开始 -->
+    <string name="issue_factoring_buy_submit">提交</string>
+    <string name="issue_factoring_buy_amount">金额</string>
+    <string name="issue_factoring_buy_enddate">保理到期日</string>
+    <!-- 发布偏好保理结束 -->
+    <!-- 区块链开始 -->
+    <string name="blockchain_title">区块链</string>
+    <string name="blockchain_amount">金额（AMOUNT）</string>
+    <string name="blockchain_currency">承兑币种（CURRENCY）</string>
+    <string name="blockchain_creditnumber">信用证编号（LC NO）</string>
+    <string name="blockchain_number">编号</string>
+    <string name="blockchain_person">资产持有人：</string>
+    <string name="blockchain_time">上链时间：</string>
+    <string name="blockchain_time2">资产撮合成功时间：</string>
+    <string name="blockchain_time3">资产交易完成时间：</string>
+    <string name="blockchain_id">区块链交易ID：</string>
+    <!-- 区块链结束 -->
+    <!-- 发布页结束 -->
+    <!-- 消息页开始 -->
+    <!-- 消息页结束 -->
+    <!-- 我的页开始 -->
+    <string name="sellassets_title">待售资产</string>
+    <string name="soidinassets_title">在售资产</string>
+    <!-- 我的在售页开始 -->
+    <!-- 我的在售福费廷开始 -->
+    <string name="onsalelist_forfaiting_adapter_daitijiao">待提交</string>
+    <string name="onsalelist_forfaiting_adapter_daifabu">待发布</string>
+    <string name="onsalelist_forfaiting_adapter_baojiaozhong">报价中</string>
+    <string name="onsalelist_forfaiting_adapter_cuohechenggong">撮合成功</string>
+    <string name="onsalelist_forfaiting_adapter_jiaoyiwancheng">交易完成</string>
+    <string name="onsalelist_forfaiting_adapter_refuse">拒绝</string>
+    <string name="onsalelist_forfaiting_adapter_yiquxiao">已取消</string>
+    <string name="onsalelist_forfaiting_adapter_edit">编辑</string>
+    <string name="onsalelist_forfaiting_adapter_checkletter">查看要约函</string>
+    <string name="onsalelist_forfaiting_adapter_report">再次发布</string>
+    <string name="onsalelist_forfaiting_adapter_cancel">取消</string>
+    <string name="onsalelist_forfaiting_adapter_sure">确认</string>
+    <string name="onsalelist_forfaiting_adapter_pricedetail">报价详情</string>
+    <string name="onsalelist_forfaiting_adapter_commitrangduhan">提交让渡函</string>
+    <string name="onsalelist_forfaiting_adapter_yishixiao">已失效</string>
+    <string name="sold_assets_reject_reason1">的报价被驳回</string>
+    <string name="sold_assets_reject_reason2">审核意见为：</string>
+    <string name="onsalelist_forfaiting_adapter_check_transfer_letter">查看让渡函</string>
+    <string name="onsalelist_forfaiting_adapter_more">更多</string>
+    <!-- 我的在售福费廷结束 -->
+    <!-- 我的在售保理开始 -->
+    <string name="sellassert_forfaiting_adapter_fuhezhong">复核中</string>
+    <string name="sellassert_forfaiting_adapter_fuheweitongguo">复核未通过</string>
+    <string name="sellassert_forfaiting_adapter_shenhezhong">审核中</string>
+    <string name="sellassert_forfaiting_adapter_shenheweitongguo">审核未通过</string>
+    <string name="sellassert_forfaiting_adapter_daifabu">待发布</string>
+    <string name="sellassert_forfaiting_adapter_yishixiao">已失效</string>
+    <string name="sellassert_forfaiting_adapter_rejectreson">审核意见</string>
+    <string name="sellassert_forfaiting_adapter_delete">删除</string>
+    <string name="sellassert_forfaiting_adapter_commit">提交</string>
+    <string name="sellassert_forfaiting_adapter_reject">驳回</string>
+    <string name="sellassert_forfaiting_adapter_send">发布</string>
+    <!-- 我的在售保理结束 -->
+    <!-- 我的在售页结束 -->
+    <!--我的报价开始 -->
+    <string name="myquote_title">我的报价</string>
+    <string name="myquote_cancelorno">是否取消</string>
+    <string name="myquote_reportorno">确认再次发布？</string>
+    <string name="myquote_jiaoyi_title">交易信息</string>
+    <string name="myquote_sure_quote">确认报价？</string>
+    <!--我的偏好开始 -->
+    <string name="myhobby_title">我的偏好</string>
+    <!--我的偏好结束 -->
+    <string name="forfaiting_offer_yesorno">是否确认提交？</string>
+    <string name="forfaiting_offer_price">报价买入</string>
+    <string name="forfaiting_offer_transferrate">转让利率:</string>
+    <string name="forfaiting_offer_commitprice">提交报价</string>
+    <!--我的报价结束 -->
+    <!-- 我的页结束 -->
+    <!-- 错误开始 -->
+    <!-- 错误结束 -->
+    <!-- 筛选开始 -->
+    <string name="market_forfaiting_title_filtrate_send">请选择</string>
+    <string name="market_forfaiting_title_filtrate_input">请选择</string>
+    <string name="filtrate">筛选</string>
+    <string name="filtrate_asc">升序</string>
+    <string name="filtrate_desc">降序</string>
+    <string name="filtrate_senddate">资产发布时间</string>
+    <string name="filtrate_enddate">资产到期日</string>
+    <string name="filtrate_amount">承兑金额</string>
+    <string name="filtrate_discountrate">贴现率</string>
+    <string name="filtrate_inputdate">资产录入时间</string>
+    <string name="filtrate_money">金额</string>
+    <string name="filtrate_factoring_enddate">保理到期日</string>
+    <string name="filtrate_factoring_transferrate">转让利率</string>
+    <string name="filtrate_state">资产状态:</string>
+    <string name="filtrate_factoring_type">保理类型:</string>
+    <string name="filtrate_currency">币种:</string>
+    <!-- 筛选结束 -->
+    <!--dialog开始-->
+    <string name="dialog_reviewoffer_title1">报价公司</string>
+    <string name="dialog_reviewoffer_title2">贴现率</string>
+    <string name="dialog_reviewoffer_title3">报价时间</string>
+    <string name="dialog_reviewoffer_title4">审核意见</string>
+    <string name="dialog_edit_cancel">取消</string>
+    <string name="dialog_edit_commit">提交</string>
+    <!--dialog结束-->
+    <!--dialog要约函开始-->
+    <string name="dialog_offer_letter_title">福费廷要约函</string>
+    <string name="dialog_offer_letter_from">自：</string>
+    <string name="dialog_offer_letter_to">致：</string>
+    <string name="dialog_offer_letter_detail">在此，我方特向你方（即买入方）发出要约，请你方在收到相关合格单据后无追索权地买入以下资产：</string>
+    <string name="dialog_offer_letter_assertnumber">资产编号：</string>
+    <string name="dialog_offer_letter_jiaoyimingxi">一、交易明细</string>
+    <string name="dialog_offer_letter_openfullname">信用证开证行全称：</string>
+    <string name="dialog_offer_letter_acceptbank">承兑行（如有）：</string>
+    <string name="dialog_offer_letter_cridetype">信用证类型：</string>
+    <string name="dialog_offer_letter_creditnumber">信用证编号：</string>
+    <string name="dialog_offer_letter_shouyiren">进口商/信用证受益人：</string>
+    <string name="dialog_offer_letter_shenqingren">出口商/信用证申请人：</string>
+    <string name="dialog_offer_letter_pinming">品名：</string>
+    <string name="dialog_offer_letter_jiexifangshi">结息方式：</string>
+    <string name="dialog_offer_letter_shouxufei">手续费（%）：</string>
+    <string name="dialog_offer_letter_fapiaojine">发票金额：</string>
+    <string name="dialog_offer_letter_kuanxianqi">宽限期：</string>
+    <string name="dialog_offer_letter_tiexianqi">贴现期天数：</string>
+    <string name="dialog_offer_letter_mairuhang">买入行付款日：</string>
+    <string name="dialog_offer_letter_chengduihang">承兑到期日：</string>
+    <string name="dialog_offer_letter_openbankdate">开证行承兑到期日：</string>
+    <string name="dialog_offer_letter_tiexianqiworkdate">贴限期（天）：</string>
+    <string name="dialog_offer_letter_bankfeiyong">银行费用：</string>
+    <string name="dialog_offer_letter_yukoufei">预扣费：</string>
+    <string name="dialog_offer_letter_danjujiaofuri">单据交付日：</string>
+    <string name="dialog_offer_letter_fukuangongzuori">付款期限：</string>
+    <string name="dialog_offer_letter_payaccount">支付账号：</string>
+    <string name="dialog_offer_letter_openbankfullname">开户行全名：</string>
+    <string name="dialog_offer_letter_payway">支付方式：</string>
+    <string name="dialog_offer_letter_letterreviewdate">要约函回传日：</string>
+    <string name="dialog_offer_letter_letterenddate">要约函截止日：</string>
+    <string name="dialog_offer_letter_deal">特殊约定：</string>
+    <string name="dialog_offer_letter_sign">有权人签字：</string>
+    <string name="pdf_letter_title">要约函</string>
+    <string name="review_offerletter_hint">*此页面仅展示要约函信息，正式文件请登录PC端下载</string>
+    <!--dialog要约函结束-->
+    <!-- 提示消息开始 -->
+    <string name="hint_issue_forfaiting_sell_choicedate">请选择日期</string>
+    <string name="hint_issue_forfaiting_sell_credittype">请选择信用证类型</string>
+    <string name="hint_issue_forfaiting_sell_indate">请选择信息有效期</string>
+    <string name="hint_issue_forfaiting_sell_price">请输入底价</string>
+    <string name="hint_issue_forfaiting_sell_area">请选择地区</string>
+    <string name="hint_issue_forfaiting_sell_countrys">请选择国家</string>
+    <string name="hint_issue_factoring_sell_choicetype">请选择资产类型</string>
+    <string name="hint_issue_factoring_sell_rate">请输入最高利率</string>
+    <string name="hint_issue_factoring_sell_expire">请选择到期日</string>
+    <string name="hint_issue_factoring_sell_iscover">是/否</string>
+    <string name="hint_issue_forfaiting_buy_discountrate">请输入贴现率</string>
+    <string name="hint_issue_forfaiting_buy_validityinformation">请选择时间</string>
+    <string name="hint_issue_forfaiting_buy_type">请选择方式</string>
+    <string name="hint_market_forfaiting_title">请输入资产类型、金额、期限</string>
+    <string name="hint_market_forfaiting_input">请输入</string>
+    <string name="hint_dialog_reject_content">请输入审核意见</string>
+    <string name="hint_forfaiting_offer_transferrate">请输入转让利率</string>
+    <string name="hint_all_loading">数据加载中……</string>
+    <string name="toast_market_detail">登录后可以查看</string>
+    <string name="toast_filtrate_area">请先选择地区</string>
+    <string name="toast_market_forfaiting_detail_choice">必须选择一项报价公司</string>
+    <string name="toast_market_forfaiting_detail_success">提交成功</string>
+    <string name="toast_market_forfaiting_detail_reject">驳回成功</string>
+    <string name="toastmarket_forfaiting_detail_downfile">下载完成,文件位置：</string>
+    <string name="toast_issue_noaccess">当前机构没有录入权限</string>
+    <string name="toast_issue_role">经办角色才可录入</string>
+    <string name="toast_issue_frofaiting_noaccess">请检查录入的信息是否正确</string>
+    <string name="toast_issue_frofaiting_uploadsuccess">上传成功</string>
+    <string name="toast_issue_frofaiting_failed">上传失败</string>
+    <string name="toast_issue_frofaiting_ocr">OCR识别成功</string>
+    <string name="toast_issue_frofaiting_nodata">暂无数据</string>
+    <string name="toast_issue_frofaiting_editsuccess">操作成功</string>
+    <string name="toast_soldinassets_cancel_success">操作已取消</string>
+    <string name="toast_soldinassets_commit_success">提交让渡函成功</string>
+    <string name="toast_soldinassets_send_success">发送成功</string>
+    <string name="toast_soldinassets_send_faild">发送失败</string>
+    <string name="toast_myquote_nodiscountrate">该报价必须大于0，且小于卖家资产贴现率</string>
+    <string name="toast_myquote_editprice">修改贴现率成功</string>
+    <string name="toast_myquote_editprice1">修改转让利率成功</string>
+    <string name="toast_filtrate_choicearea">请先选择地区</string>
+    <string name="toast_amount_not">输入的最大金额不能大于</string>
+    <string name="toast_filtrate">报价利率0-99.9999之间即可</string>
+    <string name="toast_forfaiting_offer">报价成功</string>
+    <string name="toast_forfaiting_offer_faild">同一笔资产您不可重复出价！</string>
+    <string name="toast_myquote_notransferrate">该报价必须大于0，并小于卖家资产转让利率</string>
+    <string name="toast_handleoffer_choiceprice">请选择报价</string>
+    <string name="toast_handleoffer_piricecommit">已提交审核</string>
+    <string name="toast_reviewoffer_reject">报价已驳回</string>
+    <string name="toast_reviewoffer_noprice">暂无报价</string>
+    <string name="toast_reviewoffer_pircecommit">报价已提交</string>
+    <string name="toast_review_offerletter_faild">信息不完全，请补充</string>
+    <string name="toast_forfaiting_sell_swiftcode">请输入8位或11位字母与数字组合</string>
+    <string name="toast_forfaiting_sell_institutional_id_number">请输入机构证件号码</string>
+    <string name="toast_forfaitingsell_filesize">文件过大，文件大小不可超出5M。</string>
+    <string name="toast_bankenterprise_success">绑定成功，您可使用手机号码登录。</string>
+    <string name="toast_login_status_timeout">登录过期，请重新登录</string>
+    <string name="toast_resetpassword_success">密码已重置</string>
+    <string name="toast_resetpassword_oldpass">旧密码不正确</string>
+    <string name="toast_password_not_format">密码格式不正确</string>
+    <string name="toast_resetpassword_new">新密码格式不正确</string>
+    <string name="toast_resetpassword_second">新密码两次输入不一致</string>
+    <string name="toast_nobank_address_fail">办公地址为空或格式不正确</string>
+    <string name="toast_mine_guiyuan_add_phonenumber">请输入正确手机号</string>
+    <string name="toast_teller_lockorunlock">操作成功</string>
+    <string name="toast_sellassets_success">发布成功</string>
+    <string name="login_first_hint">*首次登陆请输入初始密码</string>
+    <string name="toast_enterprise_caiwu">请上传近12个月企业财务报表</string>
+    <string name="toast_forfaiting_sell_accetpdate">请选择承兑日期</string>
+    <string name="toast_forfaiting_sell_currency">请选择承兑币种</string>
+    <string name="toast_forfaiting_sell_date">请输入信用证签发日期</string>
+    <string name="toast_forfaiting_sell_amount">请输入承兑金额</string>
+    <string name="toast_forfaiting_sell_discountrate">请输入预期贴现率</string>
+    <string name="toast_forfaiting_sell_credittype">请选择信用证兑付方式</string>
+    <string name="toast_offer_letterdetail_shenqingren">请输入信用证申请人</string>
+    <string name="toast_offer_letterdetail_shouyiren">请输入信用证受益人</string>
+    <string name="toast_offer_letterdetail_maoyipinming">请输入品名</string>
+    <string name="toast_offer_letterdetail_fapiao">汇票/发票金额</string>
+    <string name="toast_offer_letterdetail_jiexifangshi">请输入结息方式</string>
+    <string name="toast_offer_letterdetail_tiexianqi">请输入贴现期天数</string>
+    <string name="toast_offer_letterdetail_tianshu">请输入具体天数</string>
+    <string name="toast_offer_letterdetail_zhanghao">请输入账号</string>
+    <string name="toast_offer_letterdetail_kaihuhang">请输入开户银行</string>
+    <string name="toast_offer_letterdetail_fukuanlujing">请输入支付方式</string>
+    <string name="toast_offer_letterdetail_qianzi">请输入签字人</string>
+    <string name="toast_offer_letterdetail_riqi">请选择日期</string>
+    <string name="toast_reject_dialog_reason">请输入500字以内审核意见</string>
+    <string name="toast_factoring_sell_bizhong">请选择币种</string>
+    <string name="toast_factoring_sell_jine">请输入金额</string>
+    <string name="toast_factoring_sell_zhuanranglilv">请输入转让利率</string>
+    <string name="toast_factoring_sell_daoqiri">请选择保理到期日</string>
+    <string name="toast_factoring_sell_youxiaoqi">请选择信息有效期</string>
+    <string name="toast_forfaiting_sell_title">请输入标题</string>
+    <string name="toast_forfaiting_sell_xinyongzhengleixing">信用证类型不可为空</string>
+    <string name="toast_forfaiting_sell_openswiftcode">请输入开证行SWIFT CODE</string>
+    <string name="toast_forfaiting_sell_openswiftname">请输入开证行全名</string>
+    <string name="toast_forfaiting_sell_acceptswiftcode">请输入承兑行SWIFT CODE</string>
+    <string name="toast_forfaiting_sell_acceptfullname">请输入承兑行全名</string>
+    <string name="toast_forfaiting_sell_number">请输入信用证编号</string>
+    <string name="toast_forfaiting_sell_maturitydate">请选择资产到期日</string>
+    <string name="toast_forfaiting_sell_acceptdate">请选择承兑日期</string>
+    <string name="toast_factoring_sell_name">请输入资产卖出方</string>
+    <string name="toast_factoring_sell_type">请选择保理类型</string>
+    <string name="toast_factoring_sell_factoringname">请输入保理商名称</string>
+    <string name="toast_factoring_sell_iscove">请选择是否已投保</string>
+    <string name="toast_factoring_sell_assuer">请输入信用保险承保人</string>
+    <string name="toast_forfaiting_sell_enddate">请选择信息有效期</string>
+    <string name="toast_forfaiting_sell_assetsdate">请选择福费廷资产期限</string>
+    <string name="toast_forfaiting_sell_save">资产保存成功，您可在“我的-我的资产-待售资产”中编辑或提交该笔资产。</string>
+    <string name="toast_forfaiting_sell_cancelhint">“取消”后不可恢复，需重新录入提交审核，是否确认？</string>
+    <string name="toast_forfaiting_sell_cancelhint1">“取消”后不可恢复，是否确认？</string>
+    <string name="toast_forfaiting_sell_cancelcontent">确认后，您将单方面失去终止交易机会，是否确认？</string>
+    <string name="toast_forfaiting_sell_send">确认发送？</string>
+    <string name="toast_forfaiting_sell_republish_warning">*若此笔资产已有买家进行报价，贴现率不可再次编辑</string>
+    <string name="toast_factoring_sell_republish_warning">*若此笔资产已有买家进行报价，转让利率不可再次编辑</string>
+    <string name="hint_assest_insert">未标注“选填”的项目均为必输项</string>
+    <string name="toast_assest_letter">已提交让渡函</string>
+    <!-- 提示消息结束 -->
+    <!--dialog下载开始-->
+    <string name="dialog_download">下载</string>
+    <!--dialog下载结束-->
+    <!--我的-->
+    <string name="et_business_license">营业执照号码</string>
+    <string name="banck_name">银行/公司名称</string>
+    <string name="reative_name">联系人姓名</string>
+    <string name="swiftcode">SWIFT CODE</string>
+    <string name="Institutional_message">可交易的资产类型</string>
+    <string name="institution_name">机构名称</string>
+    <string name="businis_number">营业执照号码</string>
+    <string name="license_name">金融机构许可证名称</string>
+    <string name="license_number">金融机构许可证编号</string>
+    <string name="legal_persion">法定代表人</string>
+    <string name="business_number">营业执照号码</string>
+    <string name="bt_sure_commit">确认提交</string>
+    <string name="tv_phone">手机号</string>
+    <string name="tv_email">邮箱</string>
+    <string name="et_put_email">请输入企业邮箱</string>
+    <string name="tv_password">密码</string>
+    <string name="tv_role">角色</string>
+    <string name="quanxian_wenzi">复核权限说明：我的-待售资产-审核中，“同意”和“拒绝”权限；我的资产-撮合中状态下的“撮合成功”权限；我的资产-撮合成功状态下的-“取消交易”权限。</string>
+    <!--极光推送-->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <!--极光推送-->
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+    <!--登录-->
+    <string name="login_login_title">登录</string>
+    <string name="login_regist_right">注册账户</string>
+    <string name="login_button_forget_password">忘记密码</string>
+    <string name="find_password_meet_question">遇到问题? 提交账户申诉</string>
+    <!--找回密码-->
+    <string name="find_password_title">找回密码</string>
+    <string name="find_password_put_newpassword">请输入新密码</string>
+    <string name="find_password_macksure_password">请再次确认新密码</string>
+    <string name="find_password_msgcode">请输入验证码</string>
+    <string name="find_password_button_getmsgcode">获取验证码</string>
+    <string name="findpassword_get_next">下一步</string>
+    <!--重置密碼-->
+    <string name="password_no_black">密码不能为空</string>
+    <string name="password_sure_password_no">确认密码不能为空</string>
+    <!--注册-->
+    <string name="register_regest">注册</string>
+    <string name="registe_select_origtion">机构</string>
+    <string name="register_phone_or_email">手机号/邮箱</string>
+    <string name="register_put_password">请输入您的密码</string>
+    <string name="register_msg">信息</string>
+    <string name="register_origition_type">机构类型</string>
+    <string name="origition_ziliao">信息资料</string>
+    <string name="register_realation_name">联系人姓名</string>
+    <string name="register_qiye_email">企业邮箱</string>
+    <string name="register_verification_code">验证码</string>
+    <string name="register_tu_verification">请输入图中验证码</string>
+    <string name="register_invite_code">邀请码</string>
+    <string name="register_no_write_type">非必填</string>
+    <string name="register_will_agree">同意协议条款：</string>
+    <string name="register_agreement">《资产易各项法律相关条款》</string>
+    <string name="register_agree">同意</string>
+    <string name="register_select_origin">请先选择一级机构</string>
+    <string name="register_select_agree">请同意协议条款</string>
+    <string name="mine_origin_complete">尊敬的用户，您好！您的机构审核未通过，请审核过后再进行操作</string>
+    <string name="register_no_witer">请输入企业名称</string>
+    <string name="register_no">请输入机构注册地</string>
+    <string name="register_name_no">请输入联系人姓名</string>
+    <string name="register_phone_no">请输入手机号</string>
+    <string name="register_email_no">请输入邮箱账号</string>
+    <string name="register_new_login">已有账号？请登录</string>
+    <string name="register_new_hint">请输入企业营业执照名称</string>
+    <string name="register_new_title">用户注册</string>
+    <string name="regist_new_company_iv_name">企业名称</string>
+    <!--我的-->
+    <string name="mine_myassert">我的资产</string>
+    <string name="mine_baojia">我的报价</string>
+    <string name="mine_hobby">我的偏好</string>
+    <string name="mine_integral">我的积分</string>
+    <string name="mine_password_reaset">密码重置</string>
+    <string name="mine_exsit">退出</string>
+    <!--待售-->
+    <string name="mine_hobby_fufeiting">福费廷</string>
+    <string name="mine_hobby_select">筛选</string>
+    <string name="mine_hobby_commit">是否提交</string>
+    <string name="mine_hobby_delete">是否删除</string>
+    <string name="mine_hobby_publish">确认发布？</string>
+    <string name="mine_hobby_cancal">确认取消</string>
+    <string name="mine_will_sale_sure">是否确认</string>
+    <string name="mine_will_shengxu">升序</string>
+    <string name="mine_will_sale_jianxu">降序</string>
+    <string name="mine_will_sale">未通过复核</string>
+    <string name="mine_enterpriseinformation_adress">机构注册地</string>
+    <string name="mine_enterpriseinformation_ziliao">点击补充</string>
+    <string name="mine_enterpriseinformation_will_finish">待完善</string>
+    <!--机构/企业-->
+    <string name="mine_enterpriseinformation">区块链信息</string>
+    <string name="mine_enterpriseinformation_check">查看</string>
+    <string name="mine_enterpriseinformation_jigou_conponey">机构/企业</string><!--弃用-->
+    <string name="mine_enterpriseinformation_baoli">保理</string>
+    <string name="mine_enterpriseinformation_checking">审核中</string>
+    <string name="mine_enerpriseinformation_no_crose">审核未通过</string>
+    <string name="mine_enterprisseinformation_will_finish">待完善</string>
+    <string name="mine_institutional_id_number">机构证件号码</string>
+    <string name="mine_institutional_id_elect_version">机构证件电子版</string>
+    <!--银行-->
+    <string name="mine_enterpriseinformation_jiben_messge">基本信息</string>
+    <string name="mine_enterprise_information_number">请输入</string>
+    <string name="mine_yingye_dianziban">营业执照电子版</string>
+    <string name="mine_enterprise_upload">上传</string>
+    <string name="mine_enterprise_information_phone_code">手机验证码</string>
+    <string name="mine_enterprise_asser_type">可交易的资产类型</string>
+    <string name="mine_enterprise_informatin_no_banck">相关资料上传</string>
+    <string name="mine_banck_realative_number">请输入联系人手机号</string>
+    <string name="mine_banck_getmgs">请先获取短信验证码</string>
+    <string name="mine_banck_origine">银行机构</string>
+    <!--非银行-->
+    <string name="mine_information_get">获取</string>
+    <string name="mine_information_bind">绑定</string>
+    <string name="mine_information_qiye_address">请输入办公地址</string>
+    <string name="mine_enterprise_information_qiye_biao">近12个月企业财务报表</string>
+    <string name="mine_enterprise_qiye">企业</string>
+    <string name="work_adress">办公地址</string>
+    <!--我的积分-->
+    <string name="mine_jifen_history">积分获取记录</string>
+    <string name="mine_can_user_jifen">可用积分</string>
+    <string name="mine_jifen">我的积分</string>
+    <!--密码重置-->
+    <string name="mine_reseat_password">密码重置</string>
+    <string name="mine_put_origin_password">请输入原密码</string>
+    <string name="mine_put_rpassword">请再次确认新密码</string>
+    <!--消息-->
+    <string name="message_center">消息中心</string>
+    <string name="mine_message">业务消息</string>
+    <string name="system_message">系统公告</string>
+    <string name="message_ask">最新资讯</string>
+    <string name="message_kehu_server">联系我们</string>
+    <!--柜员管理-->
+    <string name="mine_guiyuan_manager">柜员管理</string>
+    <string name="mine_guiyuan_list">列表</string>
+    <string name="mine_guiyuan_add">添加</string>
+    <string name="mine_jurisdiction_setting">设置</string>
+    <string name="mine_guiyuan_add_name">请输入用户名</string>
+    <string name="mine_guiyuan_add_email">请输入正确的邮箱地址</string>
+    <string name="mine_guiyuan_add_password">请输入密码</string>
+    <string name="mine_guiyuan_fenpei">柜员分配管理</string>
+    <string name="mine_nobanck_msg">请先获取短信验证码</string>
+    <string name="mine_select_cichan_type">请选择交易的资产类型</string>
+    <string name="mine_will_conpleate">待完善</string>
+    <string name="mine_qiye_message">企业信息</string>
+    <string name="mine_guiyuan_management">柜员管理</string>
+    <string name="mine_teller_list_manager">管理员</string>
+    <string name="mine_teller_list_jingban">经办员</string>
+    <string name="mine_teller_list_fuhe">复核员</string>
+    <string name="mine_teller_list_lock">锁定</string>
+    <string name="mine_teller_list_nomal">正常</string>
+    <string name="mine_tellermanager_modification">修改</string>
+    <string name="mine_teller_manager_certification">区块链证书</string>
+    <string name="mine_permission_unlock">解锁</string>
+    <string name="mine_permission_lock">锁定</string>
+    <string name="mine_permision_zhuxiao">注销</string>
+    <string name="mine_permmision_create">创建时间</string>
+    <string name="login_message">请补充企业信息</string>
+    <string name="login_relog">为了您的账户安全,系统建议您每3个月修改一次密码</string>
+    <string name="login_emial_phone">请输入邮箱/手机号</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_smg_code">请填写4位验证码</string>
+    <string name="login_smg_code1">图片验证码不正确</string>
+    <string name="mine_teller_name">姓名</string>
+    <string name="mine_tller_email">邮箱</string>
+    <string name="mine_teller_password">密码</string>
+    <string name="toast_login_check_success">用户名密码验证通过</string>
+    <string name="mine_tellermanager_qukuailian">区块链证书:</string>
+    <string name="mine_upload_type">选择</string>
+    <string name="mine_upload">文件</string>
+    <string name="mine_tack_paction">图片/拍照</string>
+    <string name="mine_banck_ralative_persion">联系人手机号</string>
+    <string name="mine_message_phone">86-10-85172637-857</string>
+    <string name="mine_message_address">北京市朝阳区建外大街2号北京银泰中心C座1704</string>
+    <string name="mine_faq_question">常见问题</string>
+    <string name="mine_jigou_sucesss">您的机构资质申请提交成功！我们将在3个工作日内完成审核，请注意查收审核通知</string>
+    <string name="mine_message_service_time">服务时间：北京时间工作日9:00-11:30； 13:30-17:30</string>
+    <string name="mine_social_code">统一社会信用代码</string>
+    <string name="mine_operation_book">操作手册</string>
+    <string name="message_service">客户服务</string>
+    <string name="message_system_publish">系统公告</string>
+    <string name="input_socile_code">统一社会信用代码格式不正确</string>
+    <string name="banck_input_phone_code">请输入手机验证码</string>
+    <string name="input_jinrong_certificate_number">金融机构许可证编号为空或格式不正确</string>
+    <string name="input_jinrong_cerficate_name">请输入金融机构许可证名称</string>
+    <string name="input_fading_persion">请输入法定代表人</string>
+    <string name="input_bangongshi_work">请输入办公地址</string>
+    <string name="mine_bank_information">补充</string>
+    <string name="enterprise_reject_bt">拒绝原因</string>
+    <string name="mine_company_id">企业ID:</string>
+    <string name="input_legal_phone_number">请输入正确的手机号码</string>
+</resources>

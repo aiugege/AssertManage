@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/shadow_bg"
+        >
+
+        <RelativeLayout
+            android:id="@+id/market_forfaiting_data_order"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/market_forfaiting_bt_public_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filtrate_senddate"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_down"
+                android:layout_toRightOf="@+id/market_forfaiting_bt_public_data"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/market_forfaiting_rl_shuaixuan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/market_forfaiting_bt_select_shuaixuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filtrate"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_select"
+                android:layout_toRightOf="@+id/market_forfaiting_bt_select_shuaixuan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/market_forfaiting_sl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-4dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/market_forfaiting_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/tv_no_assert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/toast_issue_frofaiting_nodata"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_5dp"
+    android:layout_marginRight="@dimen/margin_5dp"
+    android:layout_marginTop="@dimen/margin_20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/customer_message_list_item_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/message_list_roundcorner_gray"
+        android:gravity="center"
+        android:padding="@dimen/margin_3dp"
+        android:text="2018-02-02 15:00:00"
+        android:textSize="@dimen/font_size_20px"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/customer_message_list_item_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_message_list_item_text_date"
+        android:background="@drawable/sysytem_item_msg_down"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <RelativeLayout
+            android:id="@+id/customer_message_list_item_ll_compay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:inputType="textMultiLine">
+
+            <TextView
+                android:id="@+id/customer_message_list_item_text_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:lineSpacingExtra="@dimen/margin_3dp"
+                android:textSize="@dimen/font_size_28px"
+                android:textIsSelectable="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/_item_text_comtent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_message_list_item_ll_compay"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_toRightOf="@+id/customer_message_list_item_iv_logo"
+            android:inputType="textMultiLine"
+            android:paddingRight="50dp"
+            android:singleLine="true"
+            android:text="注册已成功，用户ID为******，管1理员***"
+            android:textColor="@color/common_text_gray1"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/font_size_36px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

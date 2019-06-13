@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lable_facotring">Factoring</string>
+    <string name="lable_forfaiting">Forfaiting</string>
+    <!-- maintab开始 -->
+    <string name="maintab_home">Home page</string>
+    <string name="maintab_market">Market</string>
+    <string name="maintab_message">Message</string>
+    <string name="maintab_mine">Mine</string>
+    <!-- maintab结束 -->
+    <string name="app_name">AssetX</string>
+    <string name="nopermission">Unauthorized</string>
+    <string name="nopermission_tips">Fail to get the necessary permissions to run the system, please uses after agree the terms</string>
+    <string name="exception_nopermission">Please open relevant permissions within the mobile phone.</string>
+    <!-- home页开始 -->
+    <string name="home_title_text">AssetX</string>
+    <string name="home_dailyindex">每日指数</string>
+    <string name="home_register_count">注册总量</string>
+    <string name="home_deal_amount">成交金额（美元）</string>
+    <string name="home_deal_count">成交笔数</string>
+    <string name="home_libor">LIBOR index</string>
+    <string name="home_shibro">SHIBOR index</string>
+    <string name="home_hibor">HIBOR index</string>
+    <string name="home_advantage">Branding advantages</string>
+    <string name="home_safe">Security</string>
+    <string name="home_safe_detail">Safe transaction guaranteed by blockchain technology</string>
+    <string name="home_deal">Rapid</string>
+    <string name="home_deal_detail">Min 2 Hours to finish an asset transaction</string>
+    <string name="home_message">Transparent</string>
+    <string name="home_message_detail">Open and transparent asset transaction process</string>
+    <string name="home_manager">Professional</string>
+    <string name="home_manager_detail">Professional services for specific scene</string>
+    <string name="home_team">Group member</string>
+    <string name="home_team_all">旗下成员</string>
+    <string name="home_bottom_text">中金汇理商业保理有限公司 | 北京中金汇理金融服务外包有限公司\n中金汇理融资租赁有限公司 | 中金汇理（ 天津 ） 融资租赁有限公司\n中金汇理资产管理有限公司 | 上海璞丰融资租赁有限公司\n宁波众泰融资租赁有限公司\n</string>
+    <string name="home_text_product">Products</string>
+    <string name="home_text_service">Specialty service</string>
+    <string name="home_text_detail_forfaiting">It enables digital transactions of international and domestic letter of credit</string>
+    <string name="home_text_detail_factoring">It facilitates a variety of factoring services and product combinations.</string>
+    <string name="home_text_send">Asset registration and release</string>
+    <string name="home_text_detail_send">Global services  in multi-currencies</string>
+    <string name="home_text_search">Asset inquiry and matching</string>
+    <string name="home_text_detail_search">It provides multi-channel asset inquiries</string>
+    <string name="home_text_deal">Asset trading and transfer</string>
+    <string name="home_text_detail_deal">It facilitates  the management of the whole life cycle of the assets.</string>
+    <!-- home页结束 -->
+    <!-- 市场页开始 -->
+    <string name="market_forfaiting_amount">Acceptance amount</string>
+    <string name="market_title">Market</string>
+    <string name="market_forfaiting_adapter_type_inland">Domestic</string>
+    <string name="market_forfaiting_adapter_type_outland">国际</string>
+    <string name="market_forfaiting_adapter_date">Asset maturity date:</string>
+    <string name="market_forfaiting_adapter_currency">Acceptance currency</string>
+    <string name="market_forfaiting_adapter_validity">Valid period of information:</string>
+    <string name="market_facotring_type1">Single factoring, disclosed factoring</string>
+    <string name="market_facotring_type2">Single factoring, undisclosed factoring</string>
+    <string name="market_facotring_type3">Dual factoring, disclosed factoring</string>
+    <string name="market_facotring_type4">Dual factoring, undisclosed factoring</string>
+    <string name="market_facotring_inland">Domestic</string>
+    <string name="market_facotring_exprie">Maturity date of factoring：</string>
+    <string name="market_facotring_name">Factor\'s name：</string>
+    <string name="market_facotring_sell">Asset seller：</string>
+    <!--筛选开始 -->
+    <string name="market_forfaiting_type1">Domestic L/C</string>
+    <string name="market_forfaiting_type2">International L/C</string>
+    <string name="market_forfaiting_filtrate_single">Single factoring</string>
+    <string name="market_forfaiting_filtrate_double">Dual factoring</string>
+    <string name="market_forfaiting_filtrate_disclosed">Disclosed factoring</string>
+    <string name="market_forfaiting_filtrate_undisclosed">Undisclosed factoring</string>
+    <string name="market_forfaiting_filtrate_amount_count">Range of acceptance amount</string>
+    <string name="market_forfaiting_filtrate_areaandcountry">Region/ Country</string>
+    <string name="market_forfaiting_filtrate_openbank_areaandcountry">Issuing\'s area/ Issuing\'s country</string>
+    <string name="market_forfaiting_filtrate_openfullname">Opening bank\'s full name</string>
+    <string name="market_forfaiting_filtrate_reset">Reset</string>
+    <string name="market_forfaiting_filtrate_sure">Confirm</string>
+    <string name="market_forfaiting_filtrate_discountrate">Range of discount rate（%）</string>
+    <string name="market_forfaiting_filtrate_amount_round">Range of amount</string>
+    <string name="market_forfaiting_filtrate_transferrate">Range of transfer interest rate（%）</string>
+    <string name="market_forfaiting_filtrate_type">L/C type:</string>
+    <!--筛选结束 -->
+    <!--福费廷详情开始 -->
+    <string name="market_forfaiting_detail_takeup">Hide</string>
+    <string name="market_forfaiting_detail_takedown">Unfold</string>
+    <string name="market_forfaiting_detail_stepone">Asset release and uplink</string>
+    <string name="market_forfaiting_detail_steptwo">Asset successfully matched</string>
+    <string name="market_forfaiting_detail_stepthree">Asset transaction completed</string>
+    <string name="market_forfaiting_detail_none">Chain-up failed</string>
+    <string name="market_forfaiting_detail_make_sure">Confirm the matching</string>
+    <string name="market_forfaiting_detail_submit_price">Buying on quotation</string>
+    <string name="market_forfaiting_detail_discount_rate">Discount rate</string>
+    <string name="market_forfaiting_detail_number">L/C No.</string>
+    <string name="market_forfaiting_detail_credittype">L/C cashing methods</string>
+    <string name="market_forfaiting_detail_creditdate">Issuance date of L/C</string>
+    <string name="market_forfaiting_detail_openswiftcode">Opening bank\'s SWIFT CODE</string>
+    <string name="market_forfaiting_detail_openfullname">Opening bank\'s full name</string>
+    <string name="market_forfaiting_detail_acceptswiftcode">Accepting bank\'s SWIFT CODE</string>
+    <string name="market_forfaiting_detail_acceptfullname">Accepting bank\'s full name</string>
+    <string name="market_forfaiting_detail_acceptdate">Acceptance date</string>
+    <string name="market_forfaiting_detail_payswift">Reimbursing bank\'s SWIFT CODE</string>
+    <string name="market_forfaiting_detail_payfullname">Reimbursing bank\'s full name</string>
+    <string name="market_forfaiting_detail_blockchain">Blockchain information</string>
+    <string name="market_forfaiting_detail_deal">Forfaiting agreement  </string>
+    <string name="market_forfaiting_detail_download">Download</string>
+    <string name="market_forfaiting_detail_sellmessage">Seller information</string>
+    <string name="market_forfaiting_detail_complete1">Sum up</string>
+    <string name="market_forfaiting_detail_complete2">Deal</string>
+    <string name="market_forfaiting_detail_countall">Transaction amount</string>
+    <string name="market_forfaiting_detail_dealrate">Close rate</string>
+    <string name="market_forfaiting_detail_swift_code">SWIFT CODE</string>
+    <string name="market_forfaiting_detail_arealable">Registration place</string>
+    <string name="market_forfaiting_detail_quote">Quotation information</string>
+    <string name="market_factoring_detail_seller_amountwan">Dollars</string>
+    <!--福费廷详情结束 -->
+    <!--保理详情开始 -->
+    <string name="market_factoring_detail_insured">Insured</string>
+    <string name="market_factoring_detail_transferrate">Transfer interest rate</string>
+    <string name="market_factoring_detail_date">Asset maturity date</string>
+    <string name="market_factoring_detail_creditpreson">Credit insurance underwriter</string>
+    <string name="market_factoring_detail_creditperson1">Original creditor</string>
+    <string name="market_factoring_detail_creditperson2">Original debtor</string>
+    <string name="market_factoring_detail_factoringdeal">Financial statements</string>
+    <string name="myquote_forfaiting_detail_title3">Re-check results</string>
+    <string name="item_myquote_detail_price_list_daifuhe">To be reviewed</string>
+    <string name="item_myquote_detail_price_list_tongguo">Approved</string>
+    <string name="item_myquote_detail_price_list_weitongguo">Unapproved</string>
+    <!--保理详情结束 -->
+    <!--报价列表开始 -->
+    <string name="adapter_market_forfaiting_date">Quotation time</string>
+    <!--报价列表结束 -->
+    <!-- 市场页结束 -->
+    <!-- 发布页开始 -->
+    <string name="issue_forfaiting_sell">Sales inputs</string>
+    <string name="issue_forfaiting_quote">Preference inputs</string>
+    <string name="issue_forfaiting_picker_date">Date</string>
+    <string name="forfaiting_sell_save">Save</string>
+    <!-- 发布福费廷开始 -->
+    <string name="issue_forfaiting_sell_title">Title</string>
+    <string name="issue_forfaiting_sell_letteracceptphoto">L/C electronic acceptance bill (optional)</string>
+    <string name="issue_forfaiting_sell_upload">Upload</string>
+    <string name="issue_forfaiting_sell_letter">L/C (optional)</string>
+    <string name="issue_forfaiting_sell_ocr">This document is uploaded only for OCR recognition.</string>
+    <string name="issue_forfaiting_sell_credittype">L/C type</string>
+    <string name="issue_forfaiting_sell_payswiftcode">Reimbursing bank\'s SWIFT CODE (if applicable)</string>
+    <string name="issue_forfaiting_sell_payfullname">Reimbursing bank\'s full name (if applicable)</string>
+    <string name="issue_forfaiting_sell_choicecurrency">Please choose</string>
+    <string name="issue_forfaiting_sell_discountrate">Discount rate</string>
+    <string name="issue_forfaiting_sell_indate">Validity of information</string>
+    <string name="issue_forfaiting_sell_letterfile">Forfaiting agreement (optional)</string>
+    <string name="issue_forfaiting_sell_area">Region</string>
+    <string name="issue_forfaiting_sell_openbank_area">Issuing\'s area</string>
+    <string name="issue_forfaiting_sell_countrys">Country</string>
+    <string name="issue_forfaiting_sell_openbank_countrys">Issuing\'s country</string>
+    <string name="issue_forfaiting_sell_submit">Submit</string>
+    <string name="issue_forfaiting_sell_next">Next step</string>
+    <string name="issue_forfaiting_sell_enddate">Asset maturity date</string>
+    <string name="market_forfaiting_detail_deal_type">Method of payment of L/C</string>
+    <string name="issue_forfaiting_sell_letter0">L/C</string>
+    <string name="issue_forfaiting_sell_letteracceptphoto0">L/C electronic acceptance bill</string>
+    <string name="issue_forfaiting_sell_yesorno">To confirm submission?</string>
+    <!-- 发布福费廷结束 -->
+    <!-- 发布保理开始 -->
+    <string name="issue_factoring_sell_no">No</string>
+    <string name="issue_factoring_sell">Asset seller</string>
+    <string name="issue_factoring_sell_type">Factoring type</string>
+    <string name="issue_factoring_sell_money">Amount</string>
+    <string name="issue_factoring_sell_currency">Currency</string>
+    <string name="issue_factoring_sell_transferrate">Transfer interest rate</string>
+    <string name="issue_factoring_sell_exprie">Maturity date of factoring</string>
+    <string name="issue_factoring_sell_name">Factor\'s name</string>
+    <string name="issue_factoring_sell_creditpreson1">Original creditor (optional)</string>
+    <string name="issue_factoring_sell_creditpreson2">Original debtor (optional)</string>
+    <string name="issue_factoring_sell_iscover">Whether to insure against export credit insurance</string>
+    <string name="issue_factoring_sell_assurer">Credit insurance underwriter</string>
+    <string name="issue_factoring_sell_indate">Valid period of information</string>
+    <string name="issue_factoring_sell_insurancecompact">Factoring contract</string>
+    <string name="issue_factoring_sell_compact">Cargo insurance policy (if any)</string>
+    <string name="issue_factoring_sell_transport">Transport document (optional)</string>
+    <string name="issue_factoring_sell_notice">Notification and transfer of receivable</string>
+    <string name="issue_factoring_sell_tradingcontract">Trading contract (optional)</string>
+    <string name="issue_factoring_sell_compact1">Cargo insurance policy</string>
+    <string name="issue_factoring_sell_transport1">Transport document</string>
+    <string name="issue_factoring_sell_tradingcontract1">Trading contract</string>
+    <string name="issue_factoring_sell_yes">Yes</string>
+    <!-- 发布保理结束 -->
+    <!-- 发布偏好福费廷开始 -->
+    <string name="issue_forfaiting_buy_discountrate">Expected discount rate (rate of return)</string>
+    <string name="issue_forfaiting_buy_validityinformation">Expected forfaiting asset maturity</string>
+    <string name="issue_forfaiting_buy_qian">Before</string>
+    <string name="issue_forfaiting_buy_accepttype">Method of payment of L/C</string>
+    <string name="issue_forfaiting_buy_area">Region (optional)</string>
+    <string name="issue_forfaiting_buy_openbank_area">Issuing\'s area (optional)</string>
+    <string name="issue_forfaiting_buy_country">Country (optional)</string>
+    <string name="issue_forfaiting_buy_openbank_country">Issuing\'s country (optional)</string>
+    <!-- 发布偏好福费廷结束 -->
+    <!-- 发布偏好保理开始 -->
+    <string name="issue_factoring_buy_submit">Submit</string>
+    <string name="issue_factoring_buy_amount">Amount</string>
+    <string name="issue_factoring_buy_enddate">Maturity date of factoring</string>
+    <!-- 发布偏好保理结束 -->
+    <!-- 区块链开始 -->
+    <string name="blockchain_title">BLOCKCHAIN</string>
+    <string name="blockchain_amount"> Amount（AMOUNT）</string>
+    <string name="blockchain_currency">Acceptance currency（CURRENCY）</string>
+    <string name="blockchain_creditnumber">L/C No.</string>
+    <string name="blockchain_number">No.</string>
+    <string name="blockchain_person">Asset holder：</string>
+    <string name="blockchain_time">Time of  up-chained:</string>
+    <string name="blockchain_time2">Time of successful asset matching:</string>
+    <string name="blockchain_time3">Completion time of asset transaction:</string>
+    <string name="blockchain_id">Blockchain trading ID：</string>
+    <!-- 区块链结束 -->
+    <!-- 发布页结束 -->
+    <!-- 消息页开始 -->
+    <!-- 消息页结束 -->
+    <!-- 我的页开始 -->
+    <string name="sellassets_title">Asset for sale</string>
+    <string name="soidinassets_title">Asset on sale</string>
+    <!-- 我的在售页开始 -->
+    <!-- 我的在售福费廷开始 -->
+    <string name="onsalelist_forfaiting_adapter_daitijiao">To be submitted</string>
+    <string name="onsalelist_forfaiting_adapter_daifabu">To be released</string>
+    <string name="onsalelist_forfaiting_adapter_baojiaozhong">Under quotation</string>
+    <string name="onsalelist_forfaiting_adapter_cuohechenggong">Successfully matched</string>
+    <string name="onsalelist_forfaiting_adapter_jiaoyiwancheng">Transaction completed</string>
+    <string name="onsalelist_forfaiting_adapter_refuse">Reject</string>
+    <string name="onsalelist_forfaiting_adapter_yiquxiao">Cancelled</string>
+    <string name="onsalelist_forfaiting_adapter_edit">Edit</string>
+    <string name="onsalelist_forfaiting_adapter_checkletter">View the offer</string>
+    <string name="onsalelist_forfaiting_adapter_report">Release again</string>
+    <string name="onsalelist_forfaiting_adapter_cancel">Cancel</string>
+    <string name="onsalelist_forfaiting_adapter_sure">Confirm</string>
+    <string name="onsalelist_forfaiting_adapter_pricedetail">Bidding details</string>
+    <string name="onsalelist_forfaiting_adapter_commitrangduhan">Submit a letter of assignment</string>
+    <string name="onsalelist_forfaiting_adapter_yishixiao">Invalid</string>
+    <string name="sold_assets_reject_reason1">is rejected.</string>
+    <string name="sold_assets_reject_reason2">Comments are:</string>
+    <string name="onsalelist_forfaiting_adapter_check_transfer_letter">View the alienation letter</string>
+    <string name="onsalelist_forfaiting_adapter_more">More</string>
+    <!-- 我的在售福费廷结束 -->
+    <!-- 我的在售保理开始 -->
+    <string name="sellassert_forfaiting_adapter_fuhezhong">Under review</string>
+    <string name="sellassert_forfaiting_adapter_fuheweitongguo">Reviewed and unapproved</string>
+    <string name="sellassert_forfaiting_adapter_shenhezhong">Under check</string>
+    <string name="sellassert_forfaiting_adapter_shenheweitongguo">Checked and unapproved</string>
+    <string name="sellassert_forfaiting_adapter_daifabu">To be released</string>
+    <string name="sellassert_forfaiting_adapter_yishixiao">Invalid</string>
+    <string name="sellassert_forfaiting_adapter_rejectreson">Comments</string>
+    <string name="sellassert_forfaiting_adapter_delete">Delete</string>
+    <string name="sellassert_forfaiting_adapter_commit">Submit</string>
+    <string name="sellassert_forfaiting_adapter_reject">Reject</string>
+    <string name="sellassert_forfaiting_adapter_send">Release</string>
+    <!-- 我的在售保理结束 -->
+    <!-- 我的在售页结束 -->
+    <!--我的报价开始 -->
+    <string name="myquote_title">My bids</string>
+    <string name="myquote_cancelorno"> Are you sure to cancel?</string>
+    <string name="myquote_reportorno">To confirm released again?</string>
+    <string name="myquote_jiaoyi_title">Transaction information</string>
+    <string name="myquote_sure_quote">To confirm quote?</string>
+    <!--我的偏好开始 -->
+    <string name="myhobby_title">My preference</string>
+    <!--我的偏好结束 -->
+    <string name="forfaiting_offer_yesorno">To confirm submission?</string>
+    <string name="forfaiting_offer_price">Buying on quotation</string>
+    <string name="forfaiting_offer_transferrate">Transfer interest rate:</string>
+    <string name="forfaiting_offer_commitprice">Submit the bids</string>
+    <!--我的报价结束 -->
+    <!-- 我的页结束 -->
+    <!-- 错误开始 -->
+    <!-- 错误结束 -->
+    <!-- 筛选开始 -->
+    <string name="market_forfaiting_title_filtrate_send">Please choose</string>
+    <string name="market_forfaiting_title_filtrate_input">Please choose</string>
+    <string name="filtrate">Screening</string>
+    <string name="filtrate_asc">Ascending order</string>
+    <string name="filtrate_desc">Descending order</string>
+    <string name="filtrate_senddate">Asset release time</string>
+    <string name="filtrate_enddate">Asset maturity date</string>
+    <string name="filtrate_amount">Acceptance amount</string>
+    <string name="filtrate_discountrate">Discount rate</string>
+    <string name="filtrate_inputdate">Asset input time</string>
+    <string name="filtrate_money">Amount</string>
+    <string name="filtrate_factoring_enddate">Maturity date of factoring</string>
+    <string name="filtrate_factoring_transferrate">Transfer interest rate</string>
+    <string name="filtrate_state">Asset status:</string>
+    <string name="filtrate_factoring_type">Factoring type:</string>
+    <string name="filtrate_currency">Currency:</string>
+    <!-- 筛选结束 -->
+    <!--dialog开始-->
+    <string name="dialog_reviewoffer_title1">Quoted company</string>
+    <string name="dialog_reviewoffer_title2">Discount rate</string>
+    <string name="dialog_reviewoffer_title3">Quotation time</string>
+    <string name="dialog_reviewoffer_title4">Comments</string>
+    <string name="dialog_edit_cancel">Cancel</string>
+    <string name="dialog_edit_commit">Submit</string>
+    <!--dialog结束-->
+    <!--dialog要约函开始-->
+    <string name="dialog_offer_letter_title">Forfaiting offer</string>
+    <string name="dialog_offer_letter_from">From:</string>
+    <string name="dialog_offer_letter_to">To:</string>
+    <string name="dialog_offer_letter_detail">We hereby send this offer to you (i.e., buyer) in the purpose of requesting you to buy the following assets without recourse after receiving relevant qualified documents:</string>
+    <string name="dialog_offer_letter_assertnumber">Asset number：</string>
+    <string name="dialog_offer_letter_jiaoyimingxi">I. Transaction Details</string>
+    <string name="dialog_offer_letter_openfullname">Full name of letter of credit issuing bank:</string>
+    <string name="dialog_offer_letter_acceptbank">Accepting bank(if applicable)</string>
+    <string name="dialog_offer_letter_cridetype">L/C type：</string>
+    <string name="dialog_offer_letter_creditnumber">L/C No.：</string>
+    <string name="dialog_offer_letter_shouyiren">Importer/credit beneficiary:</string>
+    <string name="dialog_offer_letter_shenqingren">Exporter/credit applicant:</string>
+    <string name="dialog_offer_letter_pinming">Product name:</string>
+    <string name="dialog_offer_letter_jiexifangshi">Methods of interest settlement:</string>
+    <string name="dialog_offer_letter_shouxufei">Service charge (%):</string>
+    <string name="dialog_offer_letter_fapiaojine">Invoice value:</string>
+    <string name="dialog_offer_letter_kuanxianqi">Grace period:</string>
+    <string name="dialog_offer_letter_tiexianqi">Discount period:</string>
+    <string name="dialog_offer_letter_mairuhang">Payment date of buying bank:</string>
+    <string name="dialog_offer_letter_chengduihang">Expiry date for acceptance:</string>
+    <string name="dialog_offer_letter_openbankdate">Expiry date for acceptance of issuing bank:</string>
+    <string name="dialog_offer_letter_tiexianqiworkdate">Discount period(day):</string>
+    <string name="dialog_offer_letter_bankfeiyong">Bank charge:</string>
+    <string name="dialog_offer_letter_yukoufei">Withholding fee:</string>
+    <string name="dialog_offer_letter_danjujiaofuri">Document delivery date:</string>
+    <string name="dialog_offer_letter_fukuangongzuori">Payment period:</string>
+    <string name="dialog_offer_letter_payaccount">Payment account:</string>
+    <string name="dialog_offer_letter_openbankfullname">Opening bank\'s full name:</string>
+    <string name="dialog_offer_letter_payway">Payment method:</string>
+    <string name="dialog_offer_letter_letterreviewdate">Offer return date:</string>
+    <string name="dialog_offer_letter_letterenddate">Offer deadline:</string>
+    <string name="dialog_offer_letter_deal">Special terms:</string>
+    <string name="dialog_offer_letter_sign">Signature of authorized person:</string>
+    <string name="pdf_letter_title">Offer</string>
+    <string name="review_offerletter_hint">*This page only shows offer information. For the official document, please log into the PC terminal to download.</string>
+    <!--dialog要约函结束-->
+    <!-- 提示消息开始 -->
+    <string name="hint_issue_forfaiting_sell_choicedate">Please choose a date</string>
+    <string name="hint_issue_forfaiting_sell_credittype">Please choose a L/C type</string>
+    <string name="hint_issue_forfaiting_sell_indate">Please choose a valid period of information</string>
+    <string name="hint_issue_forfaiting_sell_price">Please input base price</string>
+    <string name="hint_issue_forfaiting_sell_area">Please choose a region</string>
+    <string name="hint_issue_forfaiting_sell_countrys">Please choose a country</string>
+    <string name="hint_issue_factoring_sell_choicetype">Please choose asset type</string>
+    <string name="hint_issue_factoring_sell_rate">Please choose the highest interest rate</string>
+    <string name="hint_issue_factoring_sell_expire">Please choose a maturity date</string>
+    <string name="hint_issue_factoring_sell_iscover">Yes/No</string>
+    <string name="hint_issue_forfaiting_buy_discountrate">Please input discount rate</string>
+    <string name="hint_issue_forfaiting_buy_validityinformation">Please choose time</string>
+    <string name="hint_issue_forfaiting_buy_type">Please choose a method</string>
+    <string name="hint_market_forfaiting_title">Please input asset type, amount, maturity</string>
+    <string name="hint_market_forfaiting_input">Please input</string>
+    <string name="hint_dialog_reject_content">Please input comments</string>
+    <string name="hint_forfaiting_offer_transferrate">Please input a transfer interest rate</string>
+    <string name="hint_all_loading">Data loading……</string>
+    <string name="toast_market_detail"> Log in and view</string>
+    <string name="toast_filtrate_area"> Please choose a region first</string>
+    <string name="toast_market_forfaiting_detail_choice"> You must choose a quoted company</string>
+    <string name="toast_market_forfaiting_detail_success">Submitted successfully</string>
+    <string name="toast_market_forfaiting_detail_reject">successfully rejected</string>
+    <string name="toastmarket_forfaiting_detail_downfile">File download completed and located in/at:</string>
+    <string name="toast_issue_noaccess">This company has no right to input.</string>
+    <string name="toast_issue_role">Only inputs made by transactors are allowed.</string>
+    <string name="toast_issue_frofaiting_noaccess">Please check whether the input information is correct</string>
+    <string name="toast_issue_frofaiting_uploadsuccess">Successfully uploaded</string>
+    <string name="toast_issue_frofaiting_failed">Upload failed</string>
+    <string name="toast_issue_frofaiting_ocr">Successful OCR recognition</string>
+    <string name="toast_issue_frofaiting_nodata">No data temporarily</string>
+    <string name="toast_issue_frofaiting_editsuccess">Successful operation</string>
+    <string name="toast_soldinassets_cancel_success">Operation canceled!</string>
+    <string name="toast_soldinassets_commit_success">Submit an alienation letter success</string>
+    <string name="toast_soldinassets_send_success">Successfully sent</string>
+    <string name="toast_soldinassets_send_faild">Fail to send</string>
+    <string name="toast_myquote_nodiscountrate">The discount rate must be above 0 and smaller than the discount rate of seller\'s assets.</string>
+    <string name="toast_myquote_editprice">discount rate modified successfully</string>
+    <string name="toast_myquote_editprice1"> Transfer interest rate modified successfully </string>
+    <string name="toast_filtrate_choicearea">Please choose a region first</string>
+    <string name="toast_amount_not">The input maximum amount shall not be higher than</string>
+    <string name="toast_filtrate">The allowed range of bidding interest rate is 0-99.9999.</string>
+    <string name="toast_forfaiting_offer">Successful bid</string>
+    <string name="toast_forfaiting_offer_faild"> You cannot repeat bids for the same asset!</string>
+    <string name="toast_myquote_notransferrate">This quote must be above 0 and smaller than the transfer interest rate of seller\'s assets.</string>
+    <string name="toast_handleoffer_choiceprice">Please choose a bid</string>
+    <string name="toast_handleoffer_piricecommit">Submitted for review</string>
+    <string name="toast_reviewoffer_reject">Bid rejected</string>
+    <string name="toast_reviewoffer_noprice">No bid temporarily</string>
+    <string name="toast_reviewoffer_pircecommit">Bid submitted</string>
+    <string name="toast_review_offerletter_faild">Information is incomplete, please add more.</string>
+    <string name="toast_forfaiting_sell_swiftcode">Please input a 8- or 11-digit combination of letters and figures.</string>
+    <string name="toast_forfaiting_sell_institutional_id_number">Please enter Institutional ID Number.</string>
+    <string name="toast_forfaitingsell_filesize">File uploaded oversized. The file size must not exceed 5M.</string>
+    <string name="toast_bankenterprise_success">Bind sucessfully,you may log in via mobile phone number.</string>
+    <string name="toast_login_status_timeout">Login time out, please log in again</string>
+    <string name="toast_resetpassword_success">The password has been reset.</string>
+    <string name="toast_resetpassword_oldpass">Original password incorrect</string>
+    <string name="toast_password_not_format">Password in wrong format</string>
+    <string name="toast_resetpassword_new">New password in wrong format</string>
+    <string name="toast_resetpassword_second">The password has to be matched.</string>
+    <string name="toast_nobank_address_fail">Office address blank or in wrong format</string>
+    <string name="toast_mine_guiyuan_add_phonenumber">Please input a correct phone number</string>
+    <string name="toast_teller_lockorunlock">Successful operation</string>
+    <string name="toast_sellassets_success">Successfully released</string>
+    <string name="login_first_hint">*Please input the initial password for the first login.</string>
+    <string name="toast_enterprise_caiwu">Please upload the latest annual statment.</string>
+    <string name="toast_forfaiting_sell_accetpdate">Please choose acceptance date</string>
+    <string name="toast_forfaiting_sell_currency">Please choose acceptance currency</string>
+    <string name="toast_forfaiting_sell_date">Please input issuance date of L/C</string>
+    <string name="toast_forfaiting_sell_amount">Please input acceptance amount</string>
+    <string name="toast_forfaiting_sell_discountrate">Please input expected discount rate</string>
+    <string name="toast_forfaiting_sell_credittype">Please select the method of payment of L/C.</string>
+    <string name="toast_offer_letterdetail_shenqingren">Please input the applicant.</string>
+    <string name="toast_offer_letterdetail_shouyiren">Please input the beneficiary.</string>
+    <string name="toast_offer_letterdetail_maoyipinming">Please input the name of the trade item.</string>
+    <string name="toast_offer_letterdetail_fapiao">Draft/invoice amount</string>
+    <string name="toast_offer_letterdetail_jiexifangshi">Please input the settlement method for interest.</string>
+    <string name="toast_offer_letterdetail_tiexianqi">Please enter the discount period.</string>
+    <string name="toast_offer_letterdetail_tianshu">Please enter the specific number of days.</string>
+    <string name="toast_offer_letterdetail_zhanghao"> Please input account number</string>
+    <string name="toast_offer_letterdetail_kaihuhang">Please enter the deposit bank.</string>
+    <string name="toast_offer_letterdetail_fukuanlujing">Please enter the payment route.</string>
+    <string name="toast_offer_letterdetail_qianzi">Please enter the signatory.</string>
+    <string name="toast_offer_letterdetail_riqi">Please choose a date</string>
+    <string name="toast_reject_dialog_reason">Please input comments within 500 characters</string>
+    <string name="toast_factoring_sell_bizhong">Please choose a currency</string>
+    <string name="toast_factoring_sell_jine">Please input amount</string>
+    <string name="toast_factoring_sell_zhuanranglilv">Please input a transfer interest rate</string>
+    <string name="toast_factoring_sell_daoqiri">Please choose a maturity date of factoring</string>
+    <string name="toast_factoring_sell_youxiaoqi">Please choose a valid period of information</string>
+    <string name="toast_forfaiting_sell_title">Please input title</string>
+    <string name="toast_forfaiting_sell_xinyongzhengleixing">Type of L/C may not be blank.</string>
+    <string name="toast_forfaiting_sell_openswiftcode"> Please input opening bank\'s SWIFT CODE</string>
+    <string name="toast_forfaiting_sell_openswiftname"> Please input opening bank\'s full name</string>
+    <string name="toast_forfaiting_sell_acceptswiftcode"> Please input accepting bank\'s SWIFT CODE</string>
+    <string name="toast_forfaiting_sell_acceptfullname"> Please input accepting bank\'s full name</string>
+    <string name="toast_forfaiting_sell_number"> Please input L/C No.</string>
+    <string name="toast_forfaiting_sell_maturitydate">Please choose asset maturity date</string>
+    <string name="toast_forfaiting_sell_acceptdate">Please choose acceptance date</string>
+    <string name="toast_factoring_sell_name">Please input asset seller</string>
+    <string name="toast_factoring_sell_type">Please choose factoring type</string>
+    <string name="toast_factoring_sell_factoringname">Please input factor\'s name</string>
+    <string name="toast_factoring_sell_iscove">Please choose whether or not to insure</string>
+    <string name="toast_factoring_sell_assuer">The credit insurer may not be blank.</string>
+    <string name="toast_forfaiting_sell_enddate">Please choose a valid period of information</string>
+    <string name="toast_forfaiting_sell_assetsdate">Please choose forfaiting asset maturity </string>
+    <string name="toast_forfaiting_sell_save">Files saved, you can change or submit this asset under "My-My Asset-Asset for sale"</string>
+    <string name="toast_forfaiting_sell_cancelhint">\"Cancelled\" Asset will be deleted, re-entry if need to record the asset again.</string>
+    <string name="toast_forfaiting_sell_cancelhint1">\"Cancelled\" Asset will be deleted, please confirm.</string>
+    <string name="toast_forfaiting_sell_cancelcontent">The transaction cannot be cancelled unilaterally after trading.</string>
+    <string name="toast_forfaiting_sell_send">To confirm send?</string>
+    <string name="toast_forfaiting_sell_republish_warning">*If this asset was quoted, the discount rate cannot be revised.</string>
+    <string name="toast_factoring_sell_republish_warning">*If this asset was quoted, the transfer rate cannot be revised.</string>
+    <string name="hint_assest_insert">Items that are not labeled must be filled.</string>
+    <string name="toast_assest_letter">letter of assignment submitted.</string>
+    <!-- 提示消息结束 -->
+    <!--dialog下载开始-->
+    <string name="dialog_download">Download</string>
+    <!--dialog下载结束-->
+    <!--我的-->
+    <string name="et_business_license">No. of business license</string>
+    <string name="banck_name">Bank/Company Name</string>
+    <string name="reative_name">Contact name</string>
+    <string name="swiftcode">SWIFT CODE</string>
+    <string name="Institutional_message">Trading asset type</string>
+    <string name="institution_name">Institution name</string>
+    <string name="businis_number">No. of business license</string>
+    <string name="license_name">Name of license for financial institution</string>
+    <string name="license_number">No. of license for financial institution</string>
+    <string name="legal_persion">Legal representative</string>
+    <string name="business_number">No. of business license</string>
+    <string name="bt_sure_commit">Confirm submission</string>
+    <string name="tv_phone">phone number</string>
+    <string name="tv_email">E-mail</string>
+    <string name="et_put_email">Please input corporate e-mail</string>
+    <string name="tv_password">Passwords</string>
+    <string name="tv_role">Role</string>
+    <string name="quanxian_wenzi">复核权限说明：我的-待售资产-审核中，“同意”和“拒绝”权限；我的资产-撮合中状态下的“撮合成功”权限；我的资产-撮合成功状态下的-“取消交易”权限。</string>
+    <!--极光推送-->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <!--极光推送-->
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+    <!--登录-->
+    <string name="login_login_title">Log in</string>
+    <string name="login_regist_right">Register an account</string>
+    <string name="login_button_forget_password">Forget passwords</string>
+    <string name="find_password_meet_question">Any problems? Submit account appeal.</string>
+    <!--找回密码-->
+    <string name="find_password_title">Find passwords</string>
+    <string name="find_password_put_newpassword">Please input new passwords</string>
+    <string name="find_password_macksure_password">Please confirm new passwords again</string>
+    <string name="find_password_msgcode">Please input security codes</string>
+    <string name="find_password_button_getmsgcode">Get captcha</string>
+    <string name="findpassword_get_next">Next step</string>
+    <!--重置密碼-->
+    <string name="password_no_black">Confirm that passwords cannot be empty</string>
+    <string name="password_sure_password_no">Confirm that passwords cannot be empty</string>
+    <!--注册-->
+    <string name="register_regest">Register</string>
+    <string name="registe_select_origtion">institution</string>
+    <string name="register_phone_or_email">Telephone number/E-mail</string>
+    <string name="register_put_password">Please input your passwords</string>
+    <string name="register_msg">Information</string>
+    <string name="register_origition_type">Institution type</string>
+    <string name="origition_ziliao">Basic information</string>
+    <string name="register_realation_name">Contact name</string>
+    <string name="register_qiye_email">Corporate e-mail</string>
+    <string name="register_verification_code">Captcha</string>
+    <string name="register_tu_verification"> Please input security codes in the figure</string>
+    <string name="register_invite_code">Invitation code</string>
+    <string name="register_no_write_type">Optional</string>
+    <string name="register_will_agree">Agree with the terms of the agreement:</string>
+    <string name="register_agreement">《All the relevant legal terms of AssetX》</string>
+    <string name="register_agree">Agree</string>
+    <string name="register_select_origin"> Please firstly choose a tier-1 institution</string>
+    <string name="register_select_agree">Please agree with the terms of the agreement</string>
+    <string name="mine_origin_complete">Dear user, your organization has not yet passed the review. Please wait to operate upon the pass of the review.</string>
+    <string name="register_no_witer">Please input Company name</string>
+    <string name="register_no">Please input the registration place of the institution</string>
+    <string name="register_name_no">Please input contact name</string>
+    <string name="register_phone_no">Please input phone number</string>
+    <string name="register_email_no">Please input e-mail</string>
+    <string name="register_new_login">Already have an account? Log in.</string>
+    <string name="register_new_hint">Please input company business license name</string>
+    <string name="register_new_title">User registration</string>
+    <string name="regist_new_company_iv_name">Company name</string>
+    <!--我的-->
+    <string name="mine_myassert">My asset</string>
+    <string name="mine_baojia">My bids</string>
+    <string name="mine_hobby">My preference</string>
+    <string name="mine_integral">My points</string>
+    <string name="mine_password_reaset">Password resetting</string>
+    <string name="mine_exsit">Exit</string>
+    <!--待售-->
+    <string name="mine_hobby_fufeiting">Forfaiting</string>
+    <string name="mine_hobby_select">Screening</string>
+    <string name="mine_hobby_commit">Are you sure to submit?</string>
+    <string name="mine_hobby_delete">Confirm to delete</string>
+    <string name="mine_hobby_publish">To confirm released?</string>
+    <string name="mine_hobby_cancal">Confirm to cancel</string>
+    <string name="mine_will_sale_sure">Are you sure to confirm?</string>
+    <string name="mine_will_shengxu">Ascending order</string>
+    <string name="mine_will_sale_jianxu">Descending order</string>
+    <string name="mine_will_sale">Reviewed and unapproved</string>
+    <string name="mine_enterpriseinformation_adress">Registration place of the institution</string>
+    <string name="mine_enterpriseinformation_ziliao">Click and add</string>
+    <string name="mine_enterpriseinformation_will_finish">To be completed</string>
+    <!--机构/企业-->
+    <string name="mine_enterpriseinformation">Blockchain information</string>
+    <string name="mine_enterpriseinformation_check">View</string>
+    <string name="mine_enterpriseinformation_jigou_conponey">机构/企业</string><!--弃用-->
+    <string name="mine_enterpriseinformation_baoli">Factoring</string>
+    <string name="mine_enterpriseinformation_checking">Under check</string>
+    <string name="mine_enerpriseinformation_no_crose">Checked and unapproved</string>
+    <string name="mine_enterprisseinformation_will_finish">To be completed</string>
+    <string name="mine_institutional_id_number">Institutional documents number</string>
+    <string name="mine_institutional_id_elect_version">Electronic version of institutional documents</string>
+    <!--银行-->
+    <string name="mine_enterpriseinformation_jiben_messge">Basic information</string>
+    <string name="mine_enterprise_information_number">Please input</string>
+    <string name="mine_yingye_dianziban">Electronic version of business license</string>
+    <string name="mine_enterprise_upload">Upload</string>
+    <string name="mine_enterprise_information_phone_code">mobile verification code.</string>
+    <string name="mine_enterprise_asser_type">Tradable asset type</string>
+    <string name="mine_enterprise_informatin_no_banck">Upload relevant materials</string>
+    <string name="mine_banck_realative_number">Please input contact Tel.</string>
+    <string name="mine_banck_getmgs">Please obtain mobile verification code.</string>
+    <string name="mine_banck_origine">Banking institutions</string>
+    <!--非银行-->
+    <string name="mine_information_get">Get</string>
+    <string name="mine_information_bind">Bind</string>
+    <string name="mine_information_qiye_address">Please input office address</string>
+    <string name="mine_enterprise_information_qiye_biao">The company\'s financial statements within the latest 12 months</string>
+    <string name="mine_enterprise_qiye">Enterprise</string>
+    <string name="work_adress">Office address</string>
+    <!--我的积分-->
+    <string name="mine_jifen_history">Point acquisition records</string>
+    <string name="mine_can_user_jifen">Available points</string>
+    <string name="mine_jifen">My points</string>
+    <!--密码重置-->
+    <string name="mine_reseat_password">Password resetting</string>
+    <string name="mine_put_origin_password">Please input initial passwords</string>
+    <string name="mine_put_rpassword">Please confirm new passwords again</string>
+    <!--消息-->
+    <string name="message_center">Message center</string>
+    <string name="mine_message">Business message</string>
+    <string name="system_message">System announcement</string>
+    <string name="message_ask">Latest news</string>
+    <string name="message_kehu_server">Contact us</string>
+    <!--柜员管理-->
+    <string name="mine_guiyuan_manager">Teller administration</string>
+    <string name="mine_guiyuan_list">List</string>
+    <string name="mine_guiyuan_add">Adding</string>
+    <string name="mine_jurisdiction_setting"> Set</string>
+    <string name="mine_guiyuan_add_name">Please input username</string>
+    <string name="mine_guiyuan_add_email">Please input a correct e-mail address</string>
+    <string name="mine_guiyuan_add_password">Please input passwords</string>
+    <string name="mine_guiyuan_fenpei">Teller distribution management</string>
+    <string name="mine_nobanck_msg">Please firstly obtain security codes through a message</string>
+    <string name="mine_select_cichan_type">Please choose the type of asset to be traded.</string>
+    <string name="mine_will_conpleate">To be completed</string>
+    <string name="mine_qiye_message">Enterprise information</string>
+    <string name="mine_guiyuan_management">Teller administration</string>
+    <string name="mine_teller_list_manager">Manager</string>
+    <string name="mine_teller_list_jingban">Transactor</string>
+    <string name="mine_teller_list_fuhe">reviewing officer</string>
+    <string name="mine_teller_list_lock">Locked</string>
+    <string name="mine_teller_list_nomal">Normal</string>
+    <string name="mine_tellermanager_modification">Modify</string>
+    <string name="mine_teller_manager_certification">Blockchain certificate</string>
+    <string name="mine_permission_unlock">Unlock</string>
+    <string name="mine_permission_lock">Locked</string>
+    <string name="mine_permision_zhuxiao">Cancelled</string>
+    <string name="mine_permmision_create">Creation time</string>
+    <string name="login_message">Please supplement company information</string>
+    <string name="login_relog">For your account safety, it is suggested that you modify your passwords once every three months.</string>
+    <string name="login_emial_phone">Please input e-mail and phone number.</string>
+    <string name="login_password">Please input passwords</string>
+    <string name="login_smg_code">Please input a four-digit security code</string>
+    <string name="login_smg_code1">Please input a four-digit security code</string>
+    <string name="mine_teller_name">Name</string>
+    <string name="mine_tller_email">E-mail</string>
+    <string name="mine_teller_password">Passwords</string>
+    <string name="toast_login_check_success">Username and passwords verified</string>
+    <string name="mine_tellermanager_qukuailian">Blockchain certificate:</string>
+    <string name="mine_upload_type">Choose</string>
+    <string name="mine_upload">File</string>
+    <string name="mine_tack_paction">Image/take pictures</string>
+    <string name="mine_banck_ralative_persion">Contact Tel.</string>
+    <string name="mine_message_phone">86-10-85172637-857</string>
+    <string name="mine_message_address">address：Room 1704,Tower C,Yintai Center,No.2 Jianguomenwai Street,Chaoyang District,Beijing,China</string>
+    <string name="mine_faq_question">Frequently asked questions</string>
+    <string name="mine_jigou_sucesss">Your application for institutional qualification has been submitted successfully! We will finish review within 3 working days and notices will be sent after our review.</string>
+    <string name="mine_message_service_time">Service Time：Beijing time workday 9:00-11:30; 13:30-17:30</string>
+    <string name="mine_social_code">Unified social credit code</string>
+    <string name="mine_operation_book">Operation manual</string>
+    <string name="message_service">Customer service</string>
+    <string name="message_system_publish">System announcement</string>
+    <string name="input_socile_code">Unified Social Credit Code in wrong format</string>
+    <string name="banck_input_phone_code">Please input phone captcha</string>
+    <string name="input_jinrong_certificate_number">Financial institution license number is empty or in wrong fomat.</string>
+    <string name="input_jinrong_cerficate_name">Please input name of license for financial institution</string>
+    <string name="input_fading_persion">Please input legal representative</string>
+    <string name="input_bangongshi_work">Please input office address</string>
+    <string name="mine_bank_information">Supplement</string>
+    <string name="enterprise_reject_bt">Reasons</string>
+    <string name="mine_company_id">Enterprise ID:</string>
+    <string name="input_legal_phone_number">Please input a correct contact Tel</string>
+</resources>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/margin_10dp"
+    android:layout_marginRight="@dimen/margin_10dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:background="@drawable/my_offer"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_5dp"
+    android:paddingRight="@dimen/margin_5dp">
+
+    <RelativeLayout
+        android:id="@+id/market_item_rl_title_orner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+
+        <ImageView
+            android:id="@+id/market_item_iv_orner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/market_item_red_orner"
+            android:visibility="gone" />
+
+        <com.zjhl.pad.view.views.RotateTextView
+
+            android:id="@+id/market_item_tv_title_orner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_24px"
+            android:visibility="gone"
+            app:degree="22dp"
+            tools:text="国内" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/market_item_ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/offer_item_text_number"
+            style="@style/common_text_singleline_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="101120101"
+            android:textColor="@color/common_text_gray_balck"
+            android:textSize="@dimen/font_size_28px" />
+
+
+        <LinearLayout
+            android:id="@+id/market_item_text_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:background="@drawable/market_item_bg_blue_blockchain"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_5dp"
+            android:paddingRight="@dimen/margin_5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/market_item_text_iv1"
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLOCKCHAIN"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/market_item_ll_text"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/offer_baoli_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_facotring_sell"
+            android:textColor="@color/common_text_gray_balck"
+            android:textSize="@dimen/font_size_28px" />
+
+        <TextView
+            android:id="@+id/offer_baoli_sale_banck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="中国银行"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/common_text_gray_balck"
+            android:textSize="@dimen/font_size_28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/market_item_ll_compay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/market_item_text_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="@string/market_facotring_sell"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_36px" />
+
+        <TextView
+            android:id="@+id/market_item_text_compay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="中国银行股份有限公司"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/market_item_ll_factoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/market_item_ll_compay"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_6dp">
+
+        <TextView
+            android:id="@+id/market_item_text_factoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_facotring_name"
+            android:textColor="@color/common_text_gray_balck"
+            android:textSize="@dimen/font_size_28px" />
+
+        <TextView
+            android:id="@+id/tv_baoli_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="中国银行"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/common_text_gray_balck"
+            android:textSize="@dimen/font_size_28px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_danbaoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:drawableLeft="@drawable/offer_baoli"
+        android:drawablePadding="@dimen/margin_5dp"
+        android:text="@string/market_facotring_type1"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/font_size_20px" />
+
+    <TextView
+        android:id="@+id/market_item_me_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginTop="90dp"
+        android:text=""
+        android:textColor="@color/home_gray_text"
+        android:textSize="@dimen/font_size_28px" />
+
+
+    <LinearLayout
+        android:id="@+id/market_item_ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/market_item_ll_factoring"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/market_item_date_tv1"
+            style="@style/common_text_singleline_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_facotring_exprie"
+            android:textColor="@color/common_text_gray"
+            android:textSize="@dimen/font_size_24px" />
+
+        <TextView
+            android:id="@+id/offer_end_baoli"
+            style="@style/common_text_singleline_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="2019-01-03"
+            android:textColor="@color/common_text_gray"
+            android:textSize="@dimen/font_size_24px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/market_item_ll_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/market_item_ll_date"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/offer_baoli_money"
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/market_item_text2_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/offer_baoli_money"
+                android:layout_toRightOf="@id/offer_baoli_money"
+                android:text="万"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_28px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/market_item_text2_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offer_baoli_money"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="@string/issue_factoring_sell_money"
+                android:textColor="@color/home_gray_dark_text"
+                android:textSize="@dimen/font_size_20px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tv_baoli_translate"
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="9"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_36px" />
+            <TextView
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_baoli_translate"
+                android:layout_alignBaseline="@+id/tv_baoli_translate"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:text="%"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_32px" />
+
+            <TextView
+                android:id="@+id/tv_tiexianlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_baoli_translate"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="@string/market_factoring_detail_transferrate"
+                android:textColor="@color/home_gray_dark_text"
+                android:textSize="@dimen/font_size_20px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_30dp">
+
+            <TextView
+                android:id="@+id/tv_bizhong_baoli"
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="CNY"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_36px" />
+
+
+            <TextView
+                android:id="@+id/market_item_text3_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_bizhong_baoli"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_6dp"
+                android:text="@string/issue_factoring_sell_currency"
+                android:textColor="@color/home_gray_dark_text"
+                android:textSize="@dimen/font_size_20px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_bohuiyuanyin"
+                style="@style/common_text_singleline_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/margin_30dp"
+                android:text="驳回原因"
+                android:textColor="@color/red"
+                android:textSize="8dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/market_item_ll_text2"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/market_forfaiting_adapter_validity"
+            android:textColor="@color/home_gray_dark_text"
+            android:textSize="@dimen/font_size_24px" />
+
+        <TextView
+            android:id="@+id/tv_msg_vilidity"
+            style="@style/common_text_singleline_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:text="2018-03-12"
+            android:textColor="@color/home_gray_dark_text"
+            android:textSize="@dimen/font_size_24px" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/market_item_ll_text2"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/market_item_country" />
+
+            <TextView
+                android:id="@+id/market_item_rl_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:text="中国"
+                android:textColor="@color/home_gray_text"
+                android:textSize="@dimen/font_size_24px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/market_item_ll_bottom_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rl_tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_fuhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/rl_tv_right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_fuhe_offer_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv_fuhe_offer_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:src="@drawable/detail_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_fuhe_offer_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:text="@string/onsalelist_forfaiting_adapter_pricedetail"
+                        android:textColor="@color/home_gray_dark_text"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_fuhe_check_letter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_3dp"
+                    android:padding="@dimen/margin_5dp"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv_fuhe_check_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:src="@drawable/check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_fuhe_check_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:text="@string/onsalelist_forfaiting_adapter_checkletter"
+                        android:textColor="@color/home_gray_dark_text"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_offer_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/offer_bohui"
+                    android:padding="@dimen/margin_5dp"
+                    android:drawablePadding="7dp"
+                    android:text="@string/sellassert_forfaiting_adapter_rejectreson"
+                    android:textColor="@color/home_gray_dark_text"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <!--android:drawableLeft="@drawable/commit_image"-->
+                <TextView
+                    android:id="@+id/tv_fuhe_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_toRightOf="@+id/market_item_bottom_date_tv1"
+                    android:drawableLeft="@drawable/cancle_icon1"
+                    android:drawablePadding="7dp"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:paddingRight="@dimen/margin_10dp"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:text="@string/onsalelist_forfaiting_adapter_cancel"
+                    android:textColor="@color/home_gray_dark_text"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_fuhe_commit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_toRightOf="@+id/market_item_bottom_date_tv1"
+                    android:drawableLeft="@drawable/commit_transfer_letter"
+                    android:drawablePadding="7dp"
+                    android:paddingBottom="@dimen/margin_5dp"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:paddingRight="@dimen/margin_10dp"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:text="@string/onsalelist_forfaiting_adapter_commitrangduhan"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_check_more_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:text="@string/onsalelist_forfaiting_adapter_more"
+                    android:visibility="gone"
+                    android:textColor="@color/home_gray_dark_text"
+                    android:textSize="@dimen/font_size_24px"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_fuhe_check_transfer_letter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/margin_5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_fuhe_check_transfer_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:src="@drawable/check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_fuhe_check_transfer_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="7dp"
+                        android:text="@string/onsalelist_forfaiting_adapter_check_transfer_letter"
+                        android:textColor="@color/home_gray_dark_text"
+                        android:textSize="@dimen/font_size_24px" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            android:layout_below="@+id/hend"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iv_persion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/mine_teller_name"
+                android:textSize="@dimen/font_size_36px" />
+
+            <EditText
+                android:id="@+id/et_putphone_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/iv_persion"
+                android:background="@null"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/iv_password_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_persion"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:text="@string/tv_phone"
+                android:maxLength="11"
+                android:textSize="@dimen/font_size_36px" />
+
+            <EditText
+                android:id="@+id/et_put_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/iv_password_lock"
+                android:layout_below="@+id/et_putphone_emial"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_toRightOf="@+id/iv_password_lock"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_password_lock"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:text="@string/tv_email"
+                android:textSize="@dimen/font_size_36px" />
+
+            <EditText
+                android:id="@+id/et_put_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_phone"
+                android:layout_below="@+id/et_put_relative"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/enterprise_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_phone"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:text="@string/tv_password"
+                android:textSize="@dimen/font_size_36px" />
+
+            <EditText
+                android:id="@+id/et_put_enterprise_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/enterprise_email"
+                android:layout_below="@+id/et_put_number"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_toRightOf="@+id/enterprise_email"
+                android:background="@null"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textSize="@dimen/font_size_36px" />
+
+
+            <ImageView
+                android:id="@+id/iv_jiatou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_20dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/enterprise_email"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/mine_jiantou" />
+
+            <TextView
+                android:id="@+id/tv_smg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/enterprise_email"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:text="@string/tv_role"
+                android:textSize="@dimen/font_size_36px" />
+
+
+            <Spinner
+                android:id="@+id/bt_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_jiatou"
+                android:layout_below="@+id/enterprise_email"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:entries="@array/songs"
+                android:spinnerMode="dropdown"
+                android:background="@null"
+                android:theme="@style/SpinnerStyle"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bt_sure_commit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:text="@string/dialog_edit_commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_36px" />
+
+    </LinearLayout>
+</ScrollView>

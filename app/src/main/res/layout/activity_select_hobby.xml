@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/filtrate_ll"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_15dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/filtrate"
+                android:textSize="@dimen/font_size_30px" />
+
+            <TextView
+                android:id="@+id/tv_baoli_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/font_size_30px"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/ll_baoli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/tv_select_single_shuang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hend"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write">
+
+                    <TextView
+                        android:id="@+id/bt_single_doble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_2dp"
+                        android:layout_marginBottom="@dimen/margin_2dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/market_forfaiting_title_filtrate_input"
+                        android:textColor="@color/dark"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView_baoli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:background="@drawable/down_jiantou" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_ming_an"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write">
+
+                    <TextView
+                        android:id="@+id/bt_ming_an"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_2dp"
+                        android:layout_marginBottom="@dimen/margin_2dp"
+                        android:padding="@dimen/margin_5dp"
+                        android:hint="@string/market_forfaiting_title_filtrate_input"
+                        android:textColor="@color/dark"
+                        android:background="@null"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:background="@drawable/down_jiantou" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fufeiting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/tv_radigroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tv_guoji_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/assert_secss_frame_drawable_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/market_forfaiting_type1"
+                        android:textColor="@drawable/bottom_textcolor_drawable_selector"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <RadioButton
+                        android:id="@+id/tv_guonei_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/assert_secss_frame_drawable_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/market_forfaiting_type2"
+                        android:textColor="@drawable/bottom_textcolor_drawable_selector"
+                        android:textSize="@dimen/font_size_26px" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/dui_bizhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:textSize="@dimen/font_size_26px"
+                android:text="@string/market_forfaiting_adapter_currency" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tv_bizhong_cny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/assert_frame_drawable_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="CNY"
+                        android:textColor="@drawable/bottom_textcolor_drawable_selector"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <RadioButton
+                        android:id="@+id/tv_bizhong_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/assert_frame_drawable_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="USD"
+                        android:textColor="@drawable/bottom_textcolor_drawable_selector"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <RadioButton
+                        android:id="@+id/tv_bizhong_eu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:background="@drawable/assert_frame_drawable_selector"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="EUR"
+                        android:textColor="@drawable/bottom_textcolor_drawable_selector"
+                        android:textSize="@dimen/font_size_26px" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_zhuangrang_scop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:src="@drawable/mine_small_write"
+                android:textSize="@dimen/font_size_26px"
+                android:text="@string/market_forfaiting_filtrate_amount_round" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <EditText
+                    android:id="@+id/et_put_money_scope_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="13" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mine_line" />
+
+                <EditText
+                    android:id="@+id/et_put_money_scope_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="13" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tiexianlv_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:src="@drawable/mine_small_write"
+                android:text="@string/market_forfaiting_filtrate_discountrate" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <EditText
+                    android:id="@+id/et_tiexianlv_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="13" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mine_line" />
+
+                <EditText
+                    android:id="@+id/et_tiexianlv_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fufeiting_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:textSize="@dimen/font_size_26px"
+                android:text="@string/market_forfaiting_filtrate_type"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/tv_select_type"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/hend"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_banck_background_write"
+                android:visibility="gone">
+
+
+                <Button
+                    android:id="@+id/bt_spinner_selsect"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/bt_spinner_selsect"
+                    android:layout_alignRight="@+id/bt_spinner_selsect"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/down_jiantou" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_area_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="@string/market_forfaiting_filtrate_areaandcountry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/tv_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hend"
+                    android:padding="@dimen/margin_5dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_banck_background_write">
+
+                    <TextView
+                        android:id="@+id/bt_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_2dp"
+                        android:layout_marginBottom="@dimen/margin_2dp"
+                        android:background="@null"
+                        android:gravity="center"
+
+                        android:hint="@string/market_forfaiting_title_filtrate_input"
+                        android:textColor="@color/dark"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:background="@drawable/down_jiantou" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_select1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_25dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/margin_5dp"
+                    android:background="@drawable/select_banck_background_write">
+
+                    <TextView
+                        android:id="@+id/spinner_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_2dp"
+                        android:layout_marginBottom="@dimen/margin_2dp"
+                        android:textColor="@color/dark"
+                        android:hint="@string/market_forfaiting_title_filtrate_input"
+                        android:background="@null"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:background="@drawable/down_jiantou" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fufeiting_ceopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:textSize="@dimen/font_size_26px"
+                android:text="@string/market_forfaiting_filtrate_openfullname"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/rl_open_book_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_background_write"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:maxLength="100"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_60dp"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/bt_reaset"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="@string/market_forfaiting_filtrate_reset"
+            android:textColor="@color/common_text_gray" />
+
+        <Button
+            android:id="@+id/bt_sure_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/market_forfaiting_filtrate_sure"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

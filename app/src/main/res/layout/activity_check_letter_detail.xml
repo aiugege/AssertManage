@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/activity_bg_iucency"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_offer_letterdetail_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/dialog_offer_letterdetail_iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_below="@+id/dialog_offer_letterdetail_iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+
+    <LinearLayout
+        android:id="@+id/dialog_offer_letterdetail_ll_conent"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_below="@+id/dialog_offer_letterdetail_iv_ss"
+        android:layout_marginLeft="@dimen/margin_60dp"
+        android:layout_marginRight="@dimen/margin_60dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/dialog_background_write"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:id="@+id/dialog_offer_letterdetail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="编号"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10101200"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_et_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="信用证邀约函"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_for"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="自："
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_for"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="中国银行"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="致："
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_24px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="中国银行"
+                        android:textSize="@dimen/font_size_24px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="2018.06.01"
+                    android:textColor="@color/common_text_gray"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="在此，我方特向你方（即买入方）发出要约，请你方在收到相关合格单据后无追索权地买入以下资产："
+                    android:textColor="@color/common_text_gray"
+                    android:textSize="@dimen/font_size_24px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_lcnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lcnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="资产编号："
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_28px" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_et_lcnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10200102"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_28px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_offer_letterdetail_tv_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="一、交易明细"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_28px" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_iussingbankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_iussingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="信用证开证行全称："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_iussingbankname"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="中国银行股份有限公司"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_acceptingbankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_offer_letterdetail_ll_acceptingbankswift"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_acceptingbankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="承兑行(如有)："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_acceptingbankname"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="中国银行股份有限公司纽约分行"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_credittype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialog_offer_letterdetail_ll_creditnumber"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_credittype"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="信用证类型："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_credittype"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="NEGOTIATION"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_creditnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_creditnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="信用证编号："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_creditnumber"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="20 0011LC123458"
+                        android:textColorHint="@color/common_text_gray1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_lc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="进口商/信用证受益人："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_lc"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="30"
+                        android:hint=""
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_lcproposer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_lcproposer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="出口商/信用证申请人："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_lcproposer"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_basicTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_basicTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="品名："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_basicTransaction"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text="私募基金"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_interestRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_interestRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="结息方式："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_interestRate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text="预收"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="手续费："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_fee"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_invoiceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_invoiceAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="发票金额："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_invoiceAmount"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="承兑金额："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_amount"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_deadLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_deadLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="信用证期限："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_deadLine"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_grace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_grace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="宽限期："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_grace"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text="8"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="贴现期(自然日)："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodDay"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text="8"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="买入行付款日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodStart"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2018-12-15"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_acceptdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_acceptdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="承兑到期日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_acceptdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2018-12-15"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountAcceptDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountAcceptDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="开证行承兑到期日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountAcceptDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2019-10-02"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountPeriodWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountPeriodWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="贴现期(工作日)："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountPeriodWork"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text="10"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_bankCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_bankCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="银行费用："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_bankCost"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:text="1000.12"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_preCharging"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_preCharging"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="预扣费："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_preCharging"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="numberDecimal"
+                        android:text="10.26"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_deliveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_deliveryDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="单据交付日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_deliveryDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2018-08-12"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payBillDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payBillDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="付款工作日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payBillDay"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text="10"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="支付账号："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccount"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="18"
+                        android:hint=""
+                        android:inputType="number"
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccountBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccountBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="开户行全名："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccountBank"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="30"
+                        android:hint=""
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_payAccountApproach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_payAccountApproach"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="支付方式："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_payAccountApproach"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text="划扣"
+                        android:maxLength="30"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_pollicitaBackDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_pollicitaBackDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="要约函回传日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_pollicitaBackDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2018-05-14"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_pollicitaBackEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_pollicitaBackEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="要约函截止日："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_pollicitaBackEndDate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:text="2018-02-15"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_specialAgreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_specialAgreement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="特殊约定："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_specialAgreement"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text="无"
+                        android:maxLength="30"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_signPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_signPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="有权人签字："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_signPerson"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text=""
+                        android:maxLength="20"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="币种："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_currency"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text=""
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dialog_offer_letterdetail_ll_discountrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv_discountrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="转让利率："
+                        android:textColorHint="@color/common_text_gray1" />
+
+                    <TextView
+                        android:id="@+id/dialog_offer_letterdetail_tv2_discountrate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint=""
+                        android:text=""
+                        android:maxLength="13"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/common_text_gray1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_offer_letterdetail_tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

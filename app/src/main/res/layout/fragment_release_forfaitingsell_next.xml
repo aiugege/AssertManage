@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/release_factoringsubmit_ll_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp">
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_one" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:src="@drawable/line_gray" />
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_nocomplate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_forfaitingsell_next_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/release_factoringsell_insert_tv_sell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="@string/hint_assest_insert"
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_26px" />
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_forfaiting_sell_title"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_title"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/hint_market_forfaiting_title"
+                    android:textColor="@color/dark"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_letteracceptphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:paddingTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letteracceptphoto"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/issue_forfaiting_sell_letteracceptphoto"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letteracceptphoto0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/release_forfaitingsell_next_tv_letteracceptphoto"
+                    android:layout_marginLeft="@dimen/margin_18dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letteracceptphoto_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_ll_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl1_1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl2_2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl3_3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl4_4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl5_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl5_5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl6_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_iv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_ivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl6_6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_iv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_letterphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:paddingTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letterphoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/issue_forfaiting_sell_letter"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letterphoto0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/release_forfaitingsell_next_tv_letterphoto"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/issue_forfaiting_sell_ocr"
+                    android:textColor="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_22px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_letterphoto_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_ll_letterphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl1_letterphoto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl1_letterphoto1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl2_letterphoto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl2_letterphoto2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl3_letterphoto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl3_letterphoto3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl4_letterphoto4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl4_letterphoto4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl5_letterphoto5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl5_letterphoto5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl6_letterphoto6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl6_letterphoto6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issue_forfaiting_sell_credittype"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_et_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_issuingbankswift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:id="@+id/release_forfaitingsell_next_ll_issuingbankswift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_issuingbankswift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/market_forfaiting_detail_openswiftcode"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_issuingbankswift"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="11"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/toast_forfaiting_sell_swiftcode"
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_22px" />
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_issuingbankfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_issuingbankfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/market_forfaiting_detail_openfullname"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_issuingbankfullname"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_acceptbankswift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_acceptbankswift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="left"
+                    android:text="@string/market_forfaiting_detail_acceptswiftcode"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_acceptbankswift"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="11"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/toast_forfaiting_sell_swiftcode"
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_22px" />
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_acceptbankfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_acceptbankfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/market_forfaiting_detail_acceptfullname"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_acceptbankfullname"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_paybankswift"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_paybankswift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issue_forfaiting_sell_payswiftcode"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_paybankswift"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="11"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/toast_forfaiting_sell_swiftcode"
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_22px" />
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_paybankfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_paybankfullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_forfaiting_sell_payfullname"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_paybankfullname"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_tv_amount"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:gravity="left"
+                    android:text="@string/market_forfaiting_amount"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_amount"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLength="14"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/market_forfaiting_adapter_currency"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsell_next_et_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/release_forfaitingsell_next_button_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40dp"
+                android:layout_below="@+id/buttion_getMsg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:background="@drawable/login_button_background"
+                android:text="@string/issue_forfaiting_sell_next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_32px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsubmit_ll_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_one" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:src="@drawable/line_orange" />
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_complate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsubmit_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:visibility="gone"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_rl_creditnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_creditnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/market_forfaiting_detail_number"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_creditnumber0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:text="(LC NO)"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/release_forfaitingsell_next_et_creditnumber"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="30"
+                    android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_creditissuringdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_creditissuringdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/market_forfaiting_detail_creditdate"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_et_creditissuringdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_maturitydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_maturitydate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/issue_forfaiting_sell_enddate"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_et_maturitydate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsell_next_rl_acceptdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_tv_acceptdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/market_forfaiting_detail_acceptdate"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_forfaitingsell_next_et_acceptdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_credittype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/release_factoringsubmit_tv_credittype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/market_forfaiting_detail_deal_type"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_factoringsubmit_et_credittype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/common_text_gray1"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/release_factoringsubmit_rl_discountrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_discountrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_forfaiting_sell_discountrate"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/release_factoringsubmit_et_discountrate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/hint_issue_forfaiting_sell_price"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/dark"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:textSize="@dimen/font_size_26px" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/common_text_gray"
+                        android:text="%"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_validityinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_validityinformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="@string/issue_forfaiting_sell_indate"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_validityinformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_toRightOf="@+id/release_factoringsubmit_tv_validityinformation"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:maxLength="22"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsubmit_next_rl_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsubmit_next_tv_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/issue_forfaiting_sell_letterfile"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsubmit_next_tv_agreement0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/release_forfaitingsubmit_next_tv_agreement"
+                    android:layout_marginLeft="@dimen/margin_18dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsubmit_next_tv_agreement_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_ll_agreementphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl1_agreementphoto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl1_agreementphoto1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl2_agreementphoto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl2_agreementphoto2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl3_agreementphoto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl3_agreementphoto3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl4_agreementphoto4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl4_agreementphoto4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl5_agreementphoto5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl5_agreementphoto5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphoto6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl6_agreementphoto6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl6_agreementphoto6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_agreementphotoiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_forfaiting_sell_area"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_forfaiting_sell_countrys"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/release_factoringsubmit_button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:layout_below="@+id/buttion_getMsg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:background="@drawable/login_button_background"
+                android:text="@string/issue_forfaiting_sell_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_32px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

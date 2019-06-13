@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dialog_republish_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/dialog_republish_ll_conent"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/regisrt_close" />
+
+        <ImageView
+            android:id="@+id/dialog_republish_iv_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_republish_iv_close"
+            android:layout_alignRight="@+id/dialog_republish_ll_conent"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/resit_dilog_line" />
+
+        <LinearLayout
+            android:id="@+id/dialog_republish_ll_conent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/dialog_republish_iv_ss"
+            android:layout_marginLeft="@dimen/margin_30dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="@dimen/margin_30dp"
+            android:background="@drawable/dialog_background_write"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sell_assets_tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center"
+                android:text="资产编号：101120101"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_36px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:background="@color/common_text_gray1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sell_assets_next_rl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/sell_assets_next_tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/issue_forfaiting_sell_title"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/sell_assets_next_et_title"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="一年期，出借，1000万"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_26px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/sell_assets_next_tv_acceptdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/issue_forfaiting_sell_indate"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/sell_assets_next_et_acceptdate"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableRight="@drawable/mine_jiantou"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sell_assets_ll_discountrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/sell_assets_tv_discountrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="@string/issue_forfaiting_sell_discountrate"
+                        android:textColor="@color/common_text_gray"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <EditText
+                            android:id="@+id/sell_assets_et_discountrate"
+                            style="@style/common_text_singleline_style1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5dp"
+                            android:background="@null"
+                            android:hint="@string/hint_issue_forfaiting_sell_price"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/dark"
+                            android:textSize="@dimen/font_size_26px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textColor="@color/common_text_gray" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/sell_assets_tv_warning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_20px" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dialog_republish_tv_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sellassert_forfaiting_adapter_send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_36px" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

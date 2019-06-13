@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/mine_message_id"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_company_id"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_36px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_nologin_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_85dp"
+                android:background="@drawable/register_cn_newlogo1" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_nologin_user"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/tv_companey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_25dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:textSize="@dimen/font_size_36px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mine_header" />
+
+            <TextView
+                android:id="@+id/tv_bolang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/mine_header1" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bt_custmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bt_enterprise_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/enterprise_information" />
+
+                <TextView
+                    android:id="@+id/et_getet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/iv_msg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_msg"
+                    android:background="@null"
+                    android:text="@string/mine_qiye_message"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <TextView
+                    android:id="@+id/buttion_getMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_toLeftOf="@+id/iv_jiantou1"
+                    android:background="@drawable/will_finish"
+                    android:text="@string/mine_will_conpleate"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_32px" />
+
+                <ImageView
+                    android:id="@+id/iv_jiantou1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_mine_assets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_30dp">
+
+                <ImageView
+                    android:id="@+id/iv_asset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/mine_assert" />
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_asset"
+                    android:text="@string/mine_myassert"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_bug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_baojia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/shopping" />
+
+                <TextView
+                    android:id="@+id/tv_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_baojia"
+                    android:text="@string/mine_baojia"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bt_my_hoby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_tmanager_myhoby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:src="@drawable/my_hobby" />
+
+                <TextView
+                    android:id="@+id/et_myhoby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/iv_tmanager_myhoby"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_tmanager_myhoby"
+                    android:text="@string/mine_hobby"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:text="待完善"
+                    android:textSize="@dimen/font_size_36px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/iv_tmanager_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:src="@drawable/my_jifen" />
+
+                <TextView
+                    android:id="@+id/et_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_tmanager_jifen"
+                    android:text="@string/mine_integral"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:text="待完善"
+                    android:textSize="@dimen/font_size_36px" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bt_teller_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_tmanager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tmanager" />
+
+                <TextView
+                    android:id="@+id/et_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_tmanager"
+                    android:text="@string/mine_guiyuan_management"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:text=""
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_reset_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_2dp"
+                    android:background="@drawable/password_lock" />
+
+                <TextView
+                    android:id="@+id/et_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_manager"
+                    android:text="@string/mine_password_reaset"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/et_msg"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:textSize="@dimen/font_size_36px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mine_faq_question" />
+
+                <TextView
+                    android:id="@+id/tv_faq_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_question"
+                    android:text="@string/mine_faq_question"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_faq_question"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@drawable/mine_jiantou"
+                    android:textSize="@dimen/font_size_36px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_operation_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_operation_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mine_operation_manual" />
+
+                <TextView
+                    android:id="@+id/tv_operation_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_toRightOf="@+id/iv_operation_manual"
+                    android:text="@string/mine_operation_book"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <TextView
+                    android:id="@+id/tv_opration_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_operation_manual"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:drawableLeft="@drawable/download_icon"
+                    android:text="@string/market_forfaiting_detail_download"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/font_size_36px" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/buttion_getMsg"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:text="@string/mine_exsit"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

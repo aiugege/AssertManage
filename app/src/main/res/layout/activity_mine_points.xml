@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/blue">
+
+
+            <ImageView
+                android:id="@+id/iv_nologin_user"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:background="@drawable/mine_points" />
+
+
+            <TextView
+                android:id="@+id/tv_logon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_70dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/mine_can_user_jifen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+
+            <TextView
+                android:id="@+id/tv_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_logon"
+                android:text="400"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_40px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_points"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/tv_points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bt_custmer"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bt_enterprise_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <ImageView
+                    android:id="@+id/iv_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:src="@drawable/ponits_recodes" />
+
+                <TextView
+                    android:id="@+id/et_getet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/iv_msg"
+                    android:text="@string/mine_jifen_history"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_32px" />
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_offer_detail_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_detail_ll_conent"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/dialog_offer_detail_iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dialog_offer_detail_ll_conent"
+        android:layout_below="@+id/dialog_offer_detail_iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_offer_detail_ll_conent"
+        android:layout_width="@dimen/margin_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_offer_detail_iv_ss"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/dialog_background_write"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dialog_offer_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_background_yellow"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_offer_detail_title_baojia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/onsalelist_forfaiting_adapter_commitrangduhan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_36px" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_offer_detail_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <!-- 多图片开始 -->
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_ll_letterphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl1_letterphoto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl1_letterphoto1"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl2_letterphoto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl2_letterphoto2"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl3_letterphoto3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl3_letterphoto3"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl4_letterphoto4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl4_letterphoto4"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_forfaitingsell_next_ll_letterphoto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl5_letterphoto5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl5_letterphoto5"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl6_letterphoto6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl6_letterphoto6"
+                            android:src="@drawable/delete_banck1" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:background="@drawable/add_photograph" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl5_letterphoto50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl5_letterphoto50"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv510"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphoto60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_forfaitingsell_next_ll_rl6_letterphoto60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv60"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoivdelete60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_forfaitingsell_next_ll_rl6_letterphoto60"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_forfaitingsell_next_ll_rl_letterphotoiv610"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 多图片结束 -->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@color/common_text_gray1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_offer_detail_tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mine_tack_paction"
+                android:textSize="@dimen/font_size_26px" />
+
+            <View
+                android:id="@+id/dialog_offer_detail_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@color/common_text_gray1" />
+
+            <TextView
+                android:id="@+id/dialog_offer_detail_tv_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/dialog_edit_commit"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_size_26px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

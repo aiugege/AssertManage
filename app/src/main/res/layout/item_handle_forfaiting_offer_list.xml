@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/item_forfaiting_detail_offer_list_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10dp"/>
+        <LinearLayout
+            android:id="@+id/item_forfaiting_detail_offer_list_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_forfaiting_detail_offer_list_im"
+            android:layout_toLeftOf="@+id/item_forfaiting_detail_offer_list_ll"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_forfaiting_detail_offer_list_companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/font_size_30px"
+                android:maxLines="3"
+                android:text="****银行股份有限公司" />
+            <LinearLayout
+                android:id="@+id/item_forfaiting_detail_offer_list_ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/item_forfaiting_detail_offer_list_datelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_22px"
+                    android:textColor="@color/home_gray_text"
+                    android:text="@string/adapter_market_forfaiting_date" />
+
+                <TextView
+                    android:id="@+id/item_forfaiting_detail_offer_list_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_22px"
+                    android:textColor="@color/home_gray_text"
+                    android:text="2018-03-20 10:00" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_forfaiting_detail_offer_list_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_forfaiting_detail_offer_list_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.9000"
+                android:textSize="@dimen/font_size_40px"
+                android:textColor="@color/yello" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textSize="@dimen/font_size_36px"
+                android:layout_marginRight="@dimen/margin_3dp"
+                android:textColor="@color/yello" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

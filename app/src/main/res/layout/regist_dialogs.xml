@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_15dp"
+    android:layout_marginRight="@dimen/margin_15dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_webview"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/regisrt_close" />
+
+    <ImageView
+        android:id="@+id/iv_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rl_webview"
+        android:layout_below="@+id/iv_close"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/resit_dilog_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_webview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_below="@+id/iv_ss"
+        android:background="@drawable/shape_corner_up"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_payButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_webview"
+        android:layout_marginLeft="@dimen/margin_6dp"
+        android:layout_marginRight="@dimen/margin_6dp"
+        android:layout_marginBottom="@dimen/margin_60dp"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/regist_agree_dialog"
+        android:enabled="false"
+        android:text="确定提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_32px" />
+</RelativeLayout>

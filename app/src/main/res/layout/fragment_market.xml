@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_bg_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_banner"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_40px"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="@string/market_title"/>
+    </RelativeLayout>
+    <!--数据开始-->
+    <RelativeLayout
+        android:id="@+id/market_property_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/margin_25dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/shadow_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/market_iv_property_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_realtime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:textSize="@dimen/font_size_40px"
+                android:text="我发布的资产" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_tv_dealanount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qiyie_logo"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:src="@drawable/mine_jiantou"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--数据结束-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:background="@color/blue">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/market_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabPaddingStart="10dp"
+            app:tabPaddingEnd="10dp"
+            android:minHeight="?attr/actionBarSize"
+            app:tabBackground="@color/blue"
+            app:tabIndicatorColor="@color/blue"
+            app:tabSelectedTextColor="@color/common_bg_gray"
+            app:tabTextColor="@color/common_text_gray1"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/market_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_gray">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

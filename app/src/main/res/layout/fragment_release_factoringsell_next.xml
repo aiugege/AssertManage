@@ -1,0 +1,2627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/release_factoringsell_next_ll_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp">
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_one" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:src="@drawable/line_gray" />
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gray_nocomplate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsell_next_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/release_factoringsell_insert_tv_sell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="@string/hint_assest_insert"
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_26px" />
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_sell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/issue_factoring_sell"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_sell"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_forfaiting_sell_area"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_et_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_forfaiting_sell_countrys"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_et_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_factoring_sell_type"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_et_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/issue_factoring_sell_money"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_amount"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLength="13"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_factoring_sell_currency"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_et_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_transfer_tates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_transfer_tates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_factoring_sell_transferrate"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/release_factoringsell_next_et_transfer_tates"
+                        style="@style/common_text_singleline_style1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:hint="@string/hint_issue_factoring_sell_rate"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:layout_marginRight="@dimen/margin_3dp"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_maturity_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_next_tv_maturity_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/issue_factoring_sell_exprie"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_next_et_maturity_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/common_text_gray1"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/issue_factoring_sell_name"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_name"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_original_creditor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_original_creditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_factoring_sell_creditpreson1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_original_creditor"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_original_debtor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_original_debtor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/issue_factoring_sell_creditpreson2"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_original_debtor"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_insure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_insure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/issue_factoring_sell_iscover"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_et_insure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/hint_issue_factoring_sell_iscover"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/common_text_gray1"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_rl_assurer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_next_tv_assurer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/issue_factoring_sell_assurer"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsell_next_et_assurer"
+                    style="@style/common_text_singleline_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="150"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_next_rl_validity_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_next_tv_validity_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/issue_factoring_sell_indate"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_next_et_validity_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/issue_forfaiting_sell_choicecurrency"
+                        android:textColor="@color/dark"
+                        android:textColorHint="@color/common_text_gray1"
+                        android:textSize="@dimen/font_size_26px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/release_factoringsell_next_button_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40dp"
+                android:layout_below="@+id/buttion_getMsg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:background="@drawable/login_button_background"
+                android:text="@string/issue_forfaiting_sell_next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_28px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsell_next_ll_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_one" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:src="@drawable/line_orange" />
+
+            <ImageView
+                android:id="@+id/release_factoringsubmit_im4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orange_complate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsell_submit_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_financialstatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp">
+
+                <LinearLayout
+                    android:id="@+id/release_factoringsell_submit_ll_financialstatement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp">
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_submit_tv_financialstatement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/market_factoring_detail_factoringdeal"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_financialstatement_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_ll_financialstatement"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_financialstatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_financialstatement1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_financialstatement1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_financialstatement2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_financialstatement2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_financialstatement3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_financialstatement3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_financialstatement4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_financialstatement4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_financialstatement5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_financialstatement5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatement6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_financialstatement6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_financialstatementivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_financialstatement6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_financialstatementiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_insurancecompact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/release_factoringsell_submit_ll_insurancecompact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_20dp">
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_submit_tv_insurancecompact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issue_factoring_sell_insurancecompact"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_insurancecompact_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_ll_insurancecompact"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_insurancecompact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_insurancecompact1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_insurancecompact1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_insurancecompact2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_insurancecompact2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_insurancecompact3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_insurancecompact3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_insurancecompact4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_insurancecompact4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_insurancecompact5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_insurancecompact5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompact6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_insurancecompact6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_insurancecompact6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_insurancecompactiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_compact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp">
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_compact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:text="@string/issue_factoring_sell_compact"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_compact_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_compact"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_compact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_compact1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_compact1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_compact2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_compact2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_compact3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_compact3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_compact4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_compact4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_compact5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_compact5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_compact6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_compact6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_compactiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_compactivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_compact6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_compactiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_factoringsell_submit_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_transportdocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_transportdocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:text="@string/issue_factoring_sell_transport"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_transportdocument_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_transportdocument"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_transportdocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_transportdocument1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_transportdocument1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_transportdocument2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_transportdocument2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_transportdocument3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_transportdocument3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_transportdocument4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_transportdocument4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_transportdocument5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_transportdocument5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocument6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_transportdocument6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_transportdocument6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_transportdocumentiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/release_factoringsell_submit_ll_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/release_factoringsell_submit_tv_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issue_factoring_sell_notice"
+                        android:textColor="@color/dark"
+                        android:textSize="@dimen/font_size_26px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_26px"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_ll_notice_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_ll_notice"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_notice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_notice1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_notice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_notice2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_notice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_notice3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_notice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_notice4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_notice5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_notice5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_notice6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_notice6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_noticeiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_noticeivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_notice6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_noticeiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsell_submit_rl_tradingcontract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_tradingcontract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:text="@string/issue_factoring_sell_tradingcontract"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_26px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsell_submit_tv_tradingcontract_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignBottom="@+id/release_factoringsell_submit_tv_tradingcontract"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="@string/issue_forfaiting_sell_upload"
+                    android:textColor="@color/blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/release_factoringsell_next_ll_tradingcontract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl1_tradingcontract1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl1_tradingcontract1"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl2_tradingcontract2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl2_tradingcontract2"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl3_tradingcontract3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl3_tradingcontract3"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl4_tradingcontract4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl4_tradingcontract4"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl5_tradingcontract5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl5_tradingcontract5"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontract6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/release_factoringsell_next_ll_rl6_tradingcontract6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5dp"
+                            android:background="@color/gray">
+
+                            <ImageView
+                                android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/margin_10dp"
+                                android:background="@drawable/jpg_shrink" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractivdelete6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_toRightOf="@+id/release_factoringsell_next_ll_rl6_tradingcontract6"
+                            android:src="@drawable/delete_banck" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/release_factoringsell_next_ll_rl_tradingcontractiv61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_photograph" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/release_factoringsell_button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_below="@+id/buttion_getMsg"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:layout_marginLeft="@dimen/margin_25dp"
+            android:layout_marginRight="@dimen/margin_25dp"
+            android:layout_marginTop="@dimen/margin_45dp"
+            android:background="@drawable/login_button_background"
+            android:text="@string/issue_forfaiting_sell_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_26px"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

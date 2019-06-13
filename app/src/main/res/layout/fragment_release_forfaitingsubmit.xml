@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_credittype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_credittype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:text="信用证类型"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_credittype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@null"
+                    android:text="请选择信用证类型"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/release_factoringsubmit_rl_discountrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_discountrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_18dp"
+                    android:layout_weight="2"
+                    android:text="贴现率"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <EditText
+                    android:id="@+id/release_factoringsubmit_et_discountrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="请输入贴现率"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_validityinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_validityinformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:text="信息有效期"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_validityinformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@null"
+                    android:maxLength="20"
+                    android:text="请输入信息有效期"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_forfaitingsubmit_next_rl_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_forfaitingsubmit_next_tv_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_18dp"
+                    android:text="福费廷协议"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <TextView
+                    android:id="@+id/release_forfaitingsubmit_next_tv_agreement_upload"
+                    android:layout_width="@dimen/margin_60dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:background="@drawable/enterprise_upload_small_write"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:text="地区"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@null"
+                    android:text="请选择地区"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/release_factoringsubmit_rl_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_20dp">
+
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:text="国家"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/font_size_40px" />
+
+                <TextView
+                    android:id="@+id/release_factoringsubmit_et_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_20dp"
+                    android:background="@null"
+                    android:text="请选择国家"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_36px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/mine_jiantou" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/release_factoringsubmit_button_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:layout_below="@+id/buttion_getMsg"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:layout_marginRight="@dimen/margin_25dp"
+                android:layout_marginTop="@dimen/margin_45dp"
+                android:background="@drawable/login_button_background"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_40px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

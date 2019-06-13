@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_myquote_detail_price_list_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/item_myquote_detail_price_list_date"
+                android:text="50%"
+                android:textColor="@color/yello"
+                android:textSize="@dimen/font_size_24px" />
+
+        <TextView
+            android:id="@+id/item_myquote_detail_price_list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2018-08-20 08:12:10"
+            android:textSize="@dimen/font_size_24px"
+            android:textColor="@color/home_gray_text" />
+
+        <LinearLayout
+            android:id="@+id/item_myquote_detail_price_list_ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_myquote_detail_price_list_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待复核"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_24px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_myquote_detail_price_list_rate"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_myquote_detail_price_list_reason1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sellassert_forfaiting_adapter_rejectreson"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_24px" />
+
+            <TextView
+                android:id="@+id/item_myquote_detail_price_list_reason2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="："
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_size_24px" />
+
+            <TextView
+                android:id="@+id/item_myquote_detail_price_list_reson3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/common_text_gray1"
+                android:textSize="@dimen/font_size_24px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
